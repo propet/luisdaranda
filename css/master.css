@@ -1,0 +1,132 @@
+body {
+    background-color: #fff;
+    font-size: 18px;
+    font-family: Helvetica Neue, 'Open Sans', sans-serif;
+}
+
+.espaciado {
+    padding: 60px 50px;
+}
+
+ul {
+    list-style-type: none;
+}
+a:hover {
+    text-decoration: none;
+}
+.glyphicon {
+  color: #536DFE;
+}
+
+.btn-navbar {
+  background-color: #fff;
+}
+
+.navbar {
+    border: 0;
+    border-width: 0;
+    /*transparent border*/
+    border-color: transparent;
+    border-radius: 0;
+    background-color: transparent;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    transition: background-color 1s ease;
+}
+
+.navbar .navbar-nav li a, .navbar .navbar-brand {
+    color: #fff;
+    transition: color 0.5s ease;
+}
+
+.navbar .navbar-nav li a:hover {
+    color: #212121;
+    background-color: #BDBDBD;
+    opacity: 0.3;
+    transition: background-color 0.5s ease;
+}
+
+.navbar .navbar-nav li.active a{
+    color: #C9C7C7;
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+}
+
+.navbar.opaque {
+    /*background-color: #455A64;*/
+    background-color: #000;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.55);
+}
+
+.navbar.opaque li a, .navbar.opaque .navbar-brand {
+    color: #fff;
+    transition: color 0.5s ease;
+}
+
+.navbar.opaque li a:hover{
+    color: #757575;
+    background-color: #CFD8DC;
+    transition: background-color 0.5s ease;
+}
+
+.navbar.opaque li.active a{
+    color: #757575;
+    background-color: #fff;
+    transition: background-color 0.5s ease;
+}
+
+#presentacion {
+  /*background-image: url(../images/Alternative_Energies_azulita3.jpg);*/
+  background-image: url(../images/collageSinAzul.jpg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  height: 100vh;
+  width: auto;
+}
+
+/*#mifoto {
+  margin-top: 100px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}*/
+
+
+
+#presentacionJumbo {
+  margin-top: 20px;
+  margin-bottom: 130px;
+  border-radius: 20px;
+  /*background-color: rgba(69, 90, 100, 0.5);*/
+  background-color: rgba(83, 109, 254, 0.9);
+  transition: background-color 0.5s ease;
+}
+#presentacionJumbo:hover {
+  /*background-color: rgba(69, 90, 100, 0.9);*/
+  background-color: rgba(83, 109, 254, 0.95);
+}
+
+#buscandoPracticas {
+  margin-top: 60px;
+}
+
+#divContacto {
+  background-color: #455A64;
+  color: #fff;
+}
+.infoContacto:hover, .infoContacto:hover span {
+  color: #fff;
+}
+
+footer {
+    margin-top: 60px;
+    padding: 40px;
+
+    background-color: #EFF0F1;
+}

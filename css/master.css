@@ -1,21 +1,13 @@
 body {
     background-color: #fff;
-    font-size: 18px;
+    /*font-size: 18px;*/
+    font-size: 1.5vw;
     font-family: Helvetica Neue, 'Open Sans', sans-serif;
 }
 
 .espaciado {
-    padding: 60px 50px;
-}
-
-ul {
-    list-style-type: none;
-}
-a:hover {
-    text-decoration: none;
-}
-.glyphicon {
-  color: #536DFE;
+    /*padding: 60px 50px;*/
+    padding: 2vw;
 }
 
 .btn-navbar {
@@ -43,7 +35,7 @@ a:hover {
 
 .navbar .navbar-nav li a:hover {
     color: #212121;
-    background-color: #BDBDBD;
+    background-color: rgba(0, 0, 0, 0);
     opacity: 0.3;
     transition: background-color 0.5s ease;
 }
@@ -77,12 +69,17 @@ a:hover {
     transition: background-color 0.5s ease;
 }
 
+.navbar-collapse.collapse.in {
+  background-color: #000;
+}
+
+
 /*-----------------------------------------------------------------------------*/
 /*Start portada*/
 /*-----------------------------------------------------------------------------*/
 #presentacion {
-  /*background-image: url(../images/Alternative_Energies_azulita3.jpg);*/
-  background-image: url(../images/collageSinAzul.jpg);
+  /*background-image: url(../images/collageSinAzul.jpg);*/
+  background-image: url(../images/collageEnergia4.jpg);
   background-repeat: no-repeat;
   background-position: right top;
   background-attachment: fixed;
@@ -97,59 +94,116 @@ a:hover {
 #presentacionPanel {
   /*margin-top: 20px;
   margin-bottom: 130px;*/
-  border-radius: 0px;
+  /*border-radius: 0px;*/
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.6);
+  padding-left: 2vw;
+  padding-right: 2vw;
   /*background-color: rgba(83, 109, 254, 0.9);*/
+  background-color: rgba(0, 0, 0, 0.6);
   transition: background-color 3s ease;
 
   -webkit-box-shadow: 7px 2px 12px -3px rgba(0,0,0,0.75);
   -moz-box-shadow: 7px 2px 12px -3px rgba(0,0,0,0.75);
   box-shadow: 7px 2px 12px -3px rgba(0,0,0,0.75);
 }
+
 #presentacionPanel:hover {
   background-color: rgba(0, 0, 0, 0.85);
   /*background-color: rgba(83, 109, 254, 0.95);*/
 }
 
 #fotoYnombre {
-  padding-left: 15px;
-  padding-top: 30px;
+  /*padding-left: 15px;
+  padding-top: 30px;*/
+  /*height: 30vh;*/
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: 3vh;
+  position: relative;
+}
+
+#mifoto {
+  padding-left: 0vw;
+  padding-right: 0vw;
+  height: 30vh;
 }
 
 #miNombre {
-  padding-top: 245px;
-  font-size: 35px;
-  /*font-weight: bold;*/
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 3vh;
   font-family: 'Roboto Condensed', sans-serif;
+  padding-left: 1vw;
+  padding-right: 0vw;
 }
 
-/*#mifoto {
-  margin-top: 100px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-}*/
 
 #gradoYmaster {
-  padding: 15px;
-  padding-top: 0px;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: -2vh;
+
+  font-size: 2.5vh;
+}
+#gradoYmaster h2 {
+  font-size: 2.7vh;
+  font-weight: bold;
+}
+
+#buscandoPracticas {
+  margin-top: 3vh;
+  font-size: 2.5vh;
 }
 /*-----------------------------------------------------------------------------*/
 /*End of portada*/
 /*-----------------------------------------------------------------------------*/
 
 
-#buscandoPracticas {
-  margin-top: 60px;
+/*-----------------------------------------------------------------------------*/
+/*Start of datos de interes*/
+/*-----------------------------------------------------------------------------*/
+ul {
+    list-style-type: none;
+    padding-left: 2.5vw;
 }
 
+#graficaSkills {
+  margin-top: 20vh;
+}
+
+/*-----------------------------------------------------------------------------*/
+/*End of datos de interes*/
+/*-----------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------*/
+/*Start of contacto*/
+/*-----------------------------------------------------------------------------*/
 #divContacto {
   background-color: #455A64;
   color: #fff;
+
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: 0vh;
+
+  font-size: 2.5vh;
 }
 .infoContacto:hover, .infoContacto:hover span {
   color: #fff;
 }
+
+a:hover {
+    text-decoration: none;
+}
+.glyphicon {
+  color: #536DFE;
+}
+/*-----------------------------------------------------------------------------*/
+/*End of contacto*/
+/*-----------------------------------------------------------------------------*/
+
 
 footer {
     margin-top: 60px;

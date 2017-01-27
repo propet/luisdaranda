@@ -168,13 +168,73 @@ ul {
     padding-left: 2.5vw;
 }
 
-#graficaSkills {
-  margin-top: 20vh;
+.divLogos {
+  padding-left: 0;
+  padding-right: 0;
+  height: 1vh;
 }
 
+.logos {
+  max-width: 1.7vw;
+}
+
+
+#graficaSkills {
+  margin-top: -3vh;
+
+}
 /*-----------------------------------------------------------------------------*/
 /*End of datos de interes*/
 /*-----------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------*/
+/*Start of proyectos section*/
+/*-----------------------------------------------------------------------------*/
+#proyectos {
+  background-color: #f6f6f6;
+}
+
+#header-proyectos {
+  margin-bottom: 2vh;
+}
+
+.thumbnail {
+  position: relative;
+  overflow: hidden;
+}
+
+.thumbnail:hover .caption {
+  /*display: block;*/
+  opacity: 1;
+}
+
+.thumbnail:hover {
+  border-color: #000;
+}
+
+.caption {
+    position:absolute;
+    top:0;
+    right:0;
+    /*background:rgba(66, 139, 202, 0.75);*/
+    background: rgba(83, 109, 254, 0.75);
+    width:100%;
+    height:100%;
+    padding:2%;
+    /*display: none;*/
+    text-align:center;
+    vertical-align: middle;
+    color:#fff !important;
+    z-index:2;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/*-----------------------------------------------------------------------------*/
+/*End of proyectos section*/
+/*-----------------------------------------------------------------------------*/
+
 
 
 /*-----------------------------------------------------------------------------*/
@@ -205,9 +265,10 @@ a:hover {
 /*-----------------------------------------------------------------------------*/
 
 
-footer {
+#footerFinal {
     margin-top: 60px;
     padding: 40px;
+    color: white;
 
-    background-color: #EFF0F1;
+    background-color: #455A64;
 }

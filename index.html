@@ -34,6 +34,9 @@
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
+                <a href="#myPage" class="navbar-brand">
+                  <img class="img-responsive" id="molino" src="./images/molinilloHome.png" alt="molino">
+                </a>
                 <button type="button" class="navbar-toggle btn-navbar" data-toggle="collapse"
                  data-target="#myNavbar" id="botonNav">
                     <span class="icon-bar"></span>
@@ -108,7 +111,7 @@
                         </h2>
                         <ul style="font-style: italic;">
                           <li>
-                            UPM ETSI Industriales, especialidad en Energía Térmica y de Fluidos.
+                            UPM ETSI Industriales, <small>especialidad en Energía Térmica y de Fluidos.</small>
                           </li>
                         </ul>
                         <h3 style="color: yellow;" id="buscandoPracticas">
@@ -526,6 +529,7 @@
 
     <!-- Scripts -->
     <script type="text/javascript">
+      $(document).ready(function() {
 
         // Opaque navbar from first section
         $(window).scroll(function() {
@@ -561,6 +565,22 @@
             }
           });
         });
+
+        // Mueve el molinillo cada vez que se le haga click a un enlace
+        // de la barra de navegacion
+        $('.navbar a').on('click', function () {
+          $('#molino').addClass('spin');
+          setTimeout(function () {
+            $('#molino').removeClass('spin');
+          }, 900);
+        });
+
+
+        // scroll page to current location + 1 px down to update the animations
+        $(window).scrollTop($(window).scrollTop()+1);
+
+      }); //end of document.ready
+
     </script>
 
 </body>

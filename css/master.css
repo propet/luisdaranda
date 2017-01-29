@@ -73,6 +73,27 @@ body {
   background-color: #000;
 }
 
+.navbar-brand img {
+  height: 100%;
+  width: auto;
+}
+
+.spin {
+  transform: rotate(1080deg);
+  transition: all 0.9s ease;
+}
+
+
+.navbar-brand {
+  padding: 0.3vh;
+  padding-left: 0.5vw;
+
+  opacity: 0;
+}
+
+.navbar.opaque .navbar-brand {
+  opacity: 1;
+}
 
 /*-----------------------------------------------------------------------------*/
 /*Start portada*/

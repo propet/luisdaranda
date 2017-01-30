@@ -186,7 +186,7 @@ body {
 /*-----------------------------------------------------------------------------*/
 ul {
     list-style-type: none;
-    padding-left: 2.5vw;
+    padding-left: 2.5vh;
 }
 
 #listaDatos {
@@ -200,11 +200,12 @@ ul {
 }
 
 .logos {
-  max-width: 1.7vw;
+  max-height: 2.7vh;
 }
 
 #graficaSkills {
-  margin-top: -3vh;
+  margin-top: -4vh;
+  padding: 6vh;
 }
 /*-----------------------------------------------------------------------------*/
 /*End of datos de interes*/
@@ -226,6 +227,7 @@ ul {
 .thumbnail {
   position: relative;
   overflow: hidden;
+  font-size: 2vh;
 }
 
 .thumbnail:hover .caption {
@@ -266,7 +268,7 @@ ul {
 #sobremiInfo {
   margin-top: 4vh;
   margin-bottom: 14vh;
-  font-size: 2.5vh;
+  font-size: 2.2vh;
 }
 #imagenOllas {
   padding-top: 7vh;
@@ -279,10 +281,17 @@ ul {
 /*-----------------------------------------------------------------------------*/
 /*Start of contacto*/
 /*-----------------------------------------------------------------------------*/
+#SixtinaManos {
+  width: 100%;
+  height: auto;
+  padding-left: 1.5vh;
+  padding-right: 1.5vh;
+}
+
 #divContacto {
   background-color: #f6f6f6;
-  padding-bottom: 15vh;
-  font-size: 2.5vh;
+  padding-bottom: 8vh;
+  font-size: 2.3vh;
 }
 
 #contactos {
@@ -314,7 +323,7 @@ a:hover {
 /*Start of footer*/
 /*-----------------------------------------------------------------------------*/
 #footerFinal {
-    padding: 6vh;
+    padding: 3vh;
     color: white;
 
     /*background-color: #455A64;*/
@@ -322,7 +331,7 @@ a:hover {
 }
 
 #pajarito {
-  width: 70%;
+  width: 37%;
   height: auto;
 }
 /*-----------------------------------------------------------------------------*/

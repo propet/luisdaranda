@@ -1,0 +1,134 @@
+body {
+    background-color: #fff;
+    /*font-size: 18px;*/
+    font-size: 1.5vw;
+    font-family: Helvetica Neue, 'Open Sans', sans-serif;
+}
+
+.espaciado {
+    /*padding: 60px 50px;*/
+    padding: 2vw;
+}
+
+.btn-navbar {
+  background-color: #fff;
+}
+
+.navbar {
+    border: 0;
+    border-width: 0;
+    /*transparent border*/
+    border-color: transparent;
+    border-radius: 0;
+    background-color: transparent;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    transition: background-color 1s ease;
+}
+
+.navbar .navbar-nav li a, .navbar .navbar-brand {
+    color: #fff;
+    transition: color 0.5s ease;
+}
+
+.navbar .navbar-nav li a:hover {
+    color: #212121;
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0.3;
+    transition: background-color 0.5s ease;
+}
+
+.navbar .navbar-nav li.active a{
+    color: #C9C7C7;
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+}
+
+.navbar.opaque {
+    /*background-color: #455A64;*/
+    background-color: #000;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.55);
+}
+
+.navbar.opaque li a, .navbar.opaque .navbar-brand {
+    color: #fff;
+    transition: color 0.5s ease;
+}
+
+.navbar.opaque li a:hover{
+    color: #757575;
+    background-color: #CFD8DC;
+    transition: background-color 0.5s ease;
+}
+
+.navbar.opaque li.active a {
+    color: #757575;
+    background-color: #fff;
+    transition: background-color 0.5s ease;
+}
+
+.navbar-collapse.collapse.in {
+  background-color: #000;
+}
+
+.navbar-brand img {
+  height: 100%;
+  width: auto;
+}
+
+.spin {
+  transform: rotate(1080deg);
+  transition: all 0.9s ease;
+}
+
+
+.navbar-brand {
+  padding: 0.3vh;
+  padding-left: 0.5vw;
+
+  opacity: 0;
+}
+
+.navbar.opaque .navbar-brand {
+  opacity: 1;
+}
+
+/*-----------------------------------------------------------------------------*/
+/*Start of proyecto PFG*/
+/*-----------------------------------------------------------------------------*/
+#backgroundPFG {
+  /*background-image: url(../images/collageSinAzul.jpg);*/
+  background-image: url(../../images/proyectos/siguelineas.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  height: 100vh;
+  width: auto;
+}
+
+#presentacionPanel {
+  font-size: 2vh;
+  padding: 5vh;
+  padding-top: 7vh;
+  height: 100vh;
+  background: rgba(83, 109, 254, 0.8);
+  transition: background-color 3s ease;
+
+  -webkit-box-shadow: -3px 0px 4px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: -3px 0px 4px -1px rgba(0,0,0,0.75);
+  box-shadow: -3px 0px 4px -1px rgba(0,0,0,0.75);
+}
+
+#presentacionPanel:hover {
+  background-color: rgba(83, 109, 254, 0.95);
+}
+
+/*-----------------------------------------------------------------------------*/
+/*End of proyecto PFG*/
+/*-----------------------------------------------------------------------------*/

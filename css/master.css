@@ -1,8 +1,13 @@
 body {
     background-color: #fff;
-    /*font-size: 18px;*/
-    font-size: 1.5vw;
+    /*font-size: 1.5vw;*/
+    font-size: 1.3vmax;
     font-family: Helvetica Neue, 'Open Sans', sans-serif;
+}
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 3vmax;
+  }
 }
 
 .espaciado {
@@ -111,6 +116,13 @@ body {
   height: 100vh;
   width: auto;
 }
+@media screen and (max-width: 800px) {
+  #presentacion {
+    /*algunos problemas tienen problemas con background-attachment: fixed;*/
+    background-attachment: scroll;
+  }
+}
+
 
 #presentacionPanel {
   /*margin-top: 20px;
@@ -151,12 +163,18 @@ body {
 
 #miNombre {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  font-size: 3vh;
+  bottom: -0.5vh;
+  left: 19vh;
+  /*font-size: 3vh;*/
+  font-size: 1.5vmax;
   font-family: 'Roboto Condensed', sans-serif;
-  padding-left: 1vw;
+  padding-left: 2vh;
   padding-right: 0vw;
+}
+@media screen and (max-width: 800px) {
+  #miNombre {
+    font-size: 3vmax;
+  }
 }
 
 
@@ -165,16 +183,38 @@ body {
   margin-right: 1vw;
   margin-top: -2vh;
 
-  font-size: 2.5vh;
+  /*font-size: 2.5vh;*/
+  font-size: 1.3vmax;
 }
-#gradoYmaster h2 {
-  font-size: 2.7vh;
-  font-weight: bold;
+@media screen and (max-width: 800px) {
+  #gradoYmaster {
+    font-size: 2.3vmax;
+    margin-top: -4vmax;
+  }
 }
 
+
+#gradoYmaster h2 {
+  /*font-size: 2.7vh;*/
+  font-size: 1.5vmax;
+  font-weight: bold;
+}
+@media screen and (max-width: 800px) {
+  #gradoYmaster h2 {
+    font-size: 2.5vmax;
+  }
+}
+
+
 #buscandoPracticas {
-  margin-top: 3vh;
-  font-size: 2.5vh;
+  margin-top: 4vh;
+  /*font-size: 2.5vh;*/
+  font-size: 1.3vmax;
+}
+@media screen and (max-width: 800px) {
+  #buscandoPracticas {
+    font-size: 2vmax;
+  }
 }
 /*-----------------------------------------------------------------------------*/
 /*End of portada*/
@@ -190,7 +230,14 @@ ul {
 }
 
 #listaDatos {
-  font-size: 2.5vh;
+  /*font-size: 2.5vh;*/
+  font-size: 1.3vmax;
+}
+
+@media screen and (max-width: 800px) {
+  #listaDatos {
+    font-size: 3vmax;
+  }
 }
 
 .divLogos {
@@ -200,12 +247,19 @@ ul {
 }
 
 .logos {
-  max-height: 2.7vh;
+  /*max-height: 2.7vh;*/
+  max-height: 1.6vmax;
+}
+
+@media screen and (max-width: 800px) {
+  .logos {
+    max-height: 3vmax;
+  }
 }
 
 #graficaSkills {
   margin-top: -4vh;
-  padding: 6vh;
+  padding: 6vmax;
 }
 /*-----------------------------------------------------------------------------*/
 /*End of datos de interes*/
@@ -220,19 +274,22 @@ ul {
   background-color: #f6f6f6;
 }
 
-#header-proyectos {
-  margin-bottom: 2vh;
-}
-
 .thumbnail {
   position: relative;
   overflow: hidden;
-  font-size: 2vh;
-}
 
-.thumbnail:hover .caption {
-  /*display: block;*/
-  opacity: 1;
+  font-size: 1.3vmax;
+  margin-left: 1vh;
+  margin-right: 1vh;
+}
+@media screen and (max-width: 800px) {
+  .thumbnail h3 {
+    font-size: 3vmax;
+    margin-bottom: -1vmax;
+  }
+  .thumbnail {
+    font-size: 2.5vmax;
+  }
 }
 
 .thumbnail:hover {
@@ -256,6 +313,16 @@ ul {
     opacity: 0;
     transition: opacity 0.5s ease;
 }
+@media screen and (max-width: 800px) {
+  .caption {
+    opacity: 1;
+  }
+}
+
+.thumbnail:hover .caption {
+  /*display: block;*/
+  opacity: 1;
+}
 /*-----------------------------------------------------------------------------*/
 /*End of proyectos section*/
 /*-----------------------------------------------------------------------------*/
@@ -266,12 +333,28 @@ ul {
 /*Start of sobre mi*/
 /*-----------------------------------------------------------------------------*/
 #sobremiInfo {
-  margin-top: 4vh;
-  margin-bottom: 14vh;
-  font-size: 2.2vh;
+  font-size: 1.3vmax;
 }
+@media screen and (max-width: 800px) {
+  #sobremiInfo {
+    font-size: 3vmax;
+  }
+}
+
 #imagenOllas {
-  padding-top: 7vh;
+  padding-bottom: 2vh;
+}
+
+#divOllasYtexto {
+  font-size: 1.2vmax;
+  padding: 8vh;
+  padding-bottom: 11vh;
+}
+@media screen and (max-width: 800px) {
+  #divOllasYtexto {
+    font-size: 2.5vmax;
+    padding-bottom: 3vh;
+  }
 }
 /*-----------------------------------------------------------------------------*/
 /*End of sobre mi*/
@@ -291,7 +374,15 @@ ul {
 #divContacto {
   background-color: #f6f6f6;
   padding-bottom: 8vh;
-  font-size: 2.3vh;
+  /*font-size: 2.3vh;*/
+  /*font-size: 1.5vw;*/
+  font-size: 1.5vmax;
+}
+@media screen and (max-width: 800px) {
+  #divContacto {
+    /*font-size: 3vh;*/
+    font-size: 3vmax;
+  }
 }
 
 #contactos {

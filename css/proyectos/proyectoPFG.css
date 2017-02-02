@@ -110,8 +110,8 @@ body {
 #presentacion {
   background-image: url(../../images/proyectos/pfg.png);
   background-repeat: no-repeat;
-  background-position: center center;
   background-attachment: scroll;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -120,11 +120,74 @@ body {
   width: auto;
 }
 
+
+
 #contenido {
-  font-size: 2.5vh;
-  padding-bottom: 100vh;
+  font-size: 1.3vmax;
+  padding-bottom: 10vh;
+}
+@media screen and (max-width: 800px) {
+  #contenido {
+    font-size: 3vmax;
+  }
 }
 
+
+.thumbnail {
+  border-width: 0;
+  padding-bottom: 1vmax;
+  padding-top: 3vmax;
+}
+
+.imagenSuelta {
+  padding-bottom: 2vmax;
+  padding-top: 1vmax;
+}
+
+pre {
+  font-size: 1.3vmax;
+  background: #fff;
+  border-color: #fff;
+}
+@media screen and (max-width: 800px) {
+  pre {
+    font-size: 3vmax;
+  }
+}
+
+.thumbnail img{
+  max-height: 17vmax;
+}
+@media screen and (max-width: 800px) {
+  .thumbnail img {
+    max-height: 30vmax;
+  }
+}
+
+#imagenSecuenciaComandos {
+  max-height: 100%;
+}
+
+#indice {
+  font-size: 1.5vmax;
+}
+@media screen and (max-width: 800px) {
+  #indice {
+    font-size: 4vmax;
+  }
+}
+
+
+.jumbotron {
+  background-color: #fff;
+  /*padding-top: 10vmax;*/
+  margin-left: -3.5vmax;
+}
+@media screen and (max-width: 800px) {
+  .jumbotron {
+    margin-left: 0vmax;
+  }
+}
 
 /*-----------------------------------------------------------------------------*/
 /*End of proyecto PFG*/

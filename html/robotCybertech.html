@@ -12,9 +12,11 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <!-- Bootstrap & Jquery -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- Syntax coloring -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/solarized-light.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
@@ -65,7 +67,7 @@
   <!-- _____________________________________________________________________ -->
   <div class="container-fluid" id="presentacion">
     <div class="row">
-      <h1 class="text-center" id="tituloProyecto"><b>Robot siguelineas y
+      <h1 class="text-center" id="tituloProyecto"><b>Robot siguelíneas y
       resuelve-laberintos </b><br>[Competición CyberTech]</h1>
     </div>
   </div> <!-- end of container-fluid -->
@@ -108,8 +110,8 @@
           </p>
 
           <p>
-            Quería aprender algo, y porque es un tema que siempre me había llamado la atención
-            , me inscribí a la competición para novatos con dos amigos. De electrónica por
+            Porque es un tema interesante, me inscribí a la competición para novatos junto
+            a dos amigos. De electrónica por
             entonces no habíamos dado nada, pero era apuntarse entonces o nunca, luego
             en cuarto estaríamos más ocupados con el proyecto, exámenes, prácticas o lo que
             fuera. Había que dejar de poner excusas y lanzarse a la piscina.
@@ -120,8 +122,9 @@
             <h1>Índice</h1>
             <ul id="indice">
               <li><a href="#objetivo">Objetivo y medios</a></li>
-              <li><a href="#elcachodemadera">El cacho de madera asesina</a></li>
-              <li><a href="#">El día de la verdad</a></li>
+              <li><a href="#elcachodemadera">El cacho de madera con ruedas</a></li>
+              <li><a href="#funcionamiento">Funcionamiento</a></li>
+              <li><a href="#lacompeticion">La competición</a></li>
             </ul>
 
           </div>
@@ -161,7 +164,6 @@
 
           <p>
             De lujo. Y participar es gratis!
-            <i class="em em-astonished"></i>
           </p>
 
         </div>
@@ -190,24 +192,25 @@
         <div class="col-sm-6">
 
           <h2 id="elcachodemadera" class="secondary-text-color">
-            <b>El cacho de madera asesina</b>
+            <b>El cacho de madera con ruedas</b>
           </h2>
 
           <p>
-            Hasta justo después de semana santa, tocaba
-            empezar a traducir la idea vaga y fantasiosa de un terminator que
+            Teníamos hasta justo después de semana santa para
+            traducir la idea vaga y fantasiosa de un terminator que
             lanzase rayos, en algo que se moviese y funcionase.
 
           </p>
-            Entonces lo único de electrotecnia que había visto era la asignatura de
-            teoría de circuitos de 2º, y peor aún, la placa de arduino se programa
-            en C. Yo hasta la fecha solo había programado en Matlab! Así que de la
-            ilusión pasamos a la incertidumbre y luego al miedo.
+            Como digo, entonces no habíamos cursado aún ninguna asignatura de
+            electrónica, pero peor es que la placa de arduino se programa
+            en C. Porque hasta la fecha solo habíamos programado en Matlab
+            (ni siquera demasiado)
+            Así que de la ilusión pasamos a la incertidumbre y luego al miedo.
           <p>
 
           <p>
-            Por suerte, de nuevo la asociación de Reset <i class="em em-kissing_heart"></i>,
-            organizan unos talleres.
+            Por suerte, la asociación de Reset
+            organizaba unos talleres.
             Creo que fueron como unos 4 en total, y en ellos nos explicaban
             cómo hacer determinadas cosas: en uno veíamos como mover los servos,
             en otro reguladores PID, otro de soldar con estaño, y el último
@@ -223,43 +226,46 @@
             un par de sensores de proximidad, un par de motorcillos, un sensor
             de luminosidad (para detectar la posición respecto de la línea negra), una
             batería, unas ruedas... Pero bueno, ya lo veríamos más detenidamente en
-            navidades, y los que estuviesen aún completamente perdidos con la programación
-            en Arduino, pues se pondrían las pilas.
+            navidades.
           </p>
 
           <p>
             Volvemos de los exámenes de enero, y el proyecto está muy abandonado.
-            Ninguno hemos encontrado al final tiempo para vernos demasiado del robot, pero
-            lo que parece claro es que va a salir por algo más de 100 &euro;.
+            Ninguno hemos encontrado tiempo para investigar mucho acerca del robot, pero
+            lo que parece claro es que va a salir por algo más de 100&euro;.
           </p>
 
           <p>
             Se propone dejarlo para el año que viene, para vérselo más detenidamente,
-            y porque ya no podíamos esperar a los pedidos de China, con los que nos
-            saldría más barato el robot. Tampoco teníamos ningún diseño CAD para hacer
-            el chasis con impresora 3D (y luego había una larga lista de espera para
+            porque ya no podíamos pedir a ninguna página china (en teoría más baratas)
+            y tener lo necesario antes de la competición, porque tampoco teníamos
+            ningún diseño CAD para hacer
+            el chasis con impresora 3D (y luego habría una larga lista de espera para
             imprimir)... Aparecen de pronto muchos
-            inconvenientes, así que el equipo hace mutis por el foro, y abandona
-            el proyecto.
-            <i class="em em-scream"></i>
+            inconvenientes, y no todo el mundo está dispuesto a hacerlo, o
+            simplemente no puede dedicarle tiempo.
+            Así que, sin tampoco anunciarlo, se abandona el proyecto.
           </p>
 
           <p>
             Iba a ser una decepción demasiado grande dejarlo en nada, así que ya por
-            mi cuenta intento hacerme una versión low-cost del robot:
+            mi cuenta intento hacerme una versión <b>low-cost</b> del robot. Con especificaciones
+            de alta gama:
           </p>
 
           <ul>
             <li>El chasis será de madera.</li>
             <li>Los motores serán dos servos mutilados (sin los topes).</li>
             <li>La batería de litio se cambia por las pilas alcalinas.</li>
-            <li>El tercer apoyo tendría que haber sido una rueda loca, pero
-            estaba muy cara en internet, y al final terminó siendo una chapa
-            incrustada en la
-            madera <i class="em em-joy"></i></li>
+            <li>El tercer apoyo consiste en un chapa de cerveza incrustada
+            en la madera (tendría que haber sido una rueda loca, pero estaban
+            muy caras).
+            </li>
+            <li>
+              Las ruedas (unas que tenía de juguete), se unen a las cabezas de
+              los servos, atravesándolas con unas varillas de acero y unos tornillos.
+            </li>
           </ul>
-
-
 
         </div>
         <!-- end of columna central con contenido -->
@@ -275,14 +281,279 @@
 
 
 
+    <!-- _____________________________________________________________________ -->
+    <!-- imagen ruedas -->
+    <!-- _____________________________________________________________________ -->
+    <div class="row">
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-8">
+        <div class="thumbnail">
+          <div class="row">
+            <div class="col-xs-4">
+              <img class="img-responsive" src="../images/proyectos/robotCybertech/chapa2_rotulo.jpg" alt="chapa">
+            </div>
+            <div class="col-xs-4">
+              <img class="img-responsive" src="../images/proyectos/robotCybertech/rueda1_comprimida.jpg" alt="rueda">
+            </div>
+            <div class="col-xs-4">
+              <img class="img-responsive" src="../images/proyectos/robotCybertech/rueda2_comprimida.jpg" alt="rueda">
+            </div>
+          </div>
+          <div class="caption">
+            Ojito al detalle del apoyo y ruedas.
+          </div>
+        </div>
 
+      </div>
+      <div class="col-sm-2">
+      </div>
+    </div>
+    <!-- _____________________________________________________________________ -->
+    <!-- end of imagen ruedas -->
+    <!-- _____________________________________________________________________ -->
+
+
+    <!-- _____________________________________________________________________ -->
+    <!-- bloque de texto -->
+    <!-- _____________________________________________________________________ -->
+    <div class="row">
+
+        <!-- columna lateral -->
+        <div class="col-sm-2 side">
+        </div>
+
+        <!-- columna central con contenido -->
+        <div class="col-sm-6">
+
+
+          <p>
+            La inversión se reduce al final a unos 40 &euro; (aún había que comprar
+            los sensores).
+          </p>
+
+          <p>
+            Y al final sucede la magia: funciona!
+          </p>
+
+
+          <!-- 16:9 aspect ratio -->
+          <div id="videoRobot" class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item"
+            src="https://www.youtube.com/embed/dNi_dgG2w4o" allowfullscreen></iframe>
+          </div>
+
+
+          <p>
+            Es terriblemente lento y ruidoso, pero hace su labor. Sigue la línea negra
+            incluso en giros rectos y bruscos.
+          </p>
+
+        </div>
+        <!-- end of columna central con contenido -->
+
+        <!-- columna lateral -->
+        <div class="col-sm-4 side">
+        </div>
+
+    </div> <!-- end of row -->
+    <!-- _____________________________________________________________________ -->
+    <!-- end of bloque de texto -->
+    <!-- _____________________________________________________________________ -->
+
+
+    <!-- _____________________________________________________________________ -->
+    <!-- bloque de texto -->
+    <!-- _____________________________________________________________________ -->
+    <div class="row">
+
+        <!-- columna lateral -->
+        <div class="col-sm-2 side">
+        </div>
+
+        <!-- columna central con contenido -->
+        <div class="col-sm-6">
+
+          <h2 id="funcionamiento" class="secondary-text-color">
+            <b>Funcionamiento</b>
+          </h2>
+
+          <p>
+            El morro del robot tiene por debajo un banda de sensores infrarrojos.
+            Emiten luz y en función de cuánta se le refleje dará un valor mayor o
+            menor de tensión que lee el arduino. De esta forma puede averigurarse
+            la posición relativa de la banda de sensores
+            respecto de la línea (mientras esté dentro de la banda).
+          </p>
+
+          <p>
+            Definiendo
+            la variable error como la distancia de la línea al centro
+            de la banda, se podrá intentar corregir el desvio con un controlador.
+            En mi caso usé un PID, y fui ajustándolo manualmente. Primero probaba con
+            unos valores de los parámetros, veía como tomaba el robot la curva,
+            para cambiar de nuevo los valores, intentando corregir el comportamiento... y así
+            pude estar quizás unas 3 horas hasta que dejaba de salirse.
+          </p>
+
+          <p>
+            Respecto a cómo consigue el robot encontrar la salida en un laberinto,
+            al principio a mi me parecía que iba a ser una tarea muy compleja, difícil
+            , y que nos llevaría pensar mucho. Resulta que hay un algoritmo para salir
+            siempre de un laberinto que es extremadamente simple.
+          </p>
+
+          <h3 class="secondary-text-color text-center">
+            Camina pegado a la misma pared
+          </h3>
+
+          <p>
+            No importa lo complejo que sea un laberinto, si siempre vas pegado a la
+            misma pared, siempre encontraras la salida. En inglés el algoritmo
+            se conoce como
+            <em><a target="_blank" href="https://en.wikipedia.org/wiki/Maze_solving_algorithm">
+              wall follower.
+            </a></em>
+          </p>
+
+          <p>
+            Y para comprobar que siempre mantiene una distancia prudencial
+            con la misma pared o no se da de frente contra nada, el robot
+            lleva pegado en uno de sus lados un sensor de proximidad y otro en
+            el frontal.
+          </p>
+
+
+        </div>
+        <!-- end of columna central con contenido -->
+
+        <!-- columna lateral -->
+        <div class="col-sm-4 side">
+        </div>
+
+    </div> <!-- end of row -->
+    <!-- _____________________________________________________________________ -->
+    <!-- end of bloque de texto -->
+    <!-- _____________________________________________________________________ -->
+
+
+    <!-- _____________________________________________________________________ -->
+    <!-- imagen sensores proximidad -->
+    <!-- _____________________________________________________________________ -->
+    <div class="row">
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-8">
+        <div class="thumbnail">
+          <div class="row">
+            <div class="col-xs-6">
+              <img class="img-responsive" src="../images/proyectos/robotCybertech/sensorLateral_comprimida.jpg" alt="rueda">
+            </div>
+            <div class="col-xs-6">
+              <img class="img-responsive" src="../images/proyectos/robotCybertech/sensorFrontal_comprimida.jpg" alt="rueda">
+            </div>
+          </div>
+          <div class="caption">
+            Sensores de proximidad  lateral y frontal.
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-2">
+      </div>
+    </div>
+    <!-- _____________________________________________________________________ -->
+    <!-- end of imagen sensores proximidad -->
+    <!-- _____________________________________________________________________ -->
+
+
+    <!-- _____________________________________________________________________ -->
+    <!-- bloque de texto -->
+    <!-- _____________________________________________________________________ -->
+    <div class="row">
+
+        <!-- columna lateral -->
+        <div class="col-sm-2 side">
+        </div>
+
+        <!-- columna central con contenido -->
+        <div class="col-sm-6">
+
+          <h2 id="lacompeticion" class="secondary-text-color">
+            <b>La competición</b>
+          </h2>
+
+          <p>
+            Hubo gente que se lo curro un montón. Había equipos con su robot
+            hecho con impresora 3D muy bonitos. Otros eran auténticas balas
+            haciendo el trazado de línea negra. El que más me impresionó fue
+            uno que podía moverse en cualquier dirección sin girar. Tenía las
+            ruedas del robot del siguiente video, sin ser el mismo.
+          </p>
+
+          <!-- 16:9 aspect ratio -->
+          <div id="videoRobot" class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item"
+            src="https://www.youtube.com/embed/3LdklhaYgX8" allowfullscreen></iframe>
+          </div>
+
+          <p>
+            Y entonces, con todo el mundo con sus robots llegados del futuro,
+            aparezco yo con un trozo de madera entre las manos. Me habría gustado
+            ir con alguien para reirme, pero estando yo solo en el equipo, tampoco
+            era una situación para estar yo ahí a carcajada limpia. Así que más bien
+            sentí vergüenza viendo como mi trozo de madera tardaba dos minutos de reloj
+            en hacerse el circuito a su paso. Ahora que ya ha pasado sí me río.
+          </p>
+
+          <p>
+            Pero me llevo la experiencia de haber participado, la satisfacción de
+            haber sacado algo adelante (creo que soy el único de mi grado que
+            ha presentado algo en la competición), y sobre todo la camiseta.
+          </p>
+
+        </div>
+        <!-- end of columna central con contenido -->
+
+        <!-- columna lateral -->
+        <div class="col-sm-4 side">
+        </div>
+
+    </div> <!-- end of row -->
+    <!-- _____________________________________________________________________ -->
+    <!-- end of bloque de texto -->
+    <!-- _____________________________________________________________________ -->
+
+    <!-- _____________________________________________________________________ -->
+    <!-- imagen sensores camiseta -->
+    <!-- _____________________________________________________________________ -->
+    <div class="row">
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-8">
+        <div class="thumbnail">
+          <div class="row">
+            <div class="col-xs-6">
+              <img class="img-responsive" src="../images/proyectos/robotCybertech/camisetaReset.jpg" alt="camiseta">
+            </div>
+            <div class="col-xs-6">
+              <img class="img-responsive" src="../images/proyectos/robotCybertech/camisetaResetEspalda.jpg" alt="camiseta">
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-2">
+      </div>
+    </div>
+    <!-- _____________________________________________________________________ -->
+    <!-- end of imagen sensores camiseta -->
+    <!-- _____________________________________________________________________ -->
 
   </div> <!-- end of container -->
   <!-- _____________________________________________________________________ -->
   <!-- end of contenido -->
   <!-- _____________________________________________________________________ -->
-
-
 
   <!-- _____________________________________________________________________ -->
   <!-- footer -->

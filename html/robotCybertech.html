@@ -103,7 +103,8 @@
             Todos los años, la asociación de estudiantes de la ETSII: Reset, organiza
             una competición de robótica para toda la UPM. Preparan diferentes
             categorias, en cada edición distintas, pero las más típicas son las de sumo
-            (robot vs robot hasta que uno muera), y la <em>classic</em> pensada para los más novatos.
+            (robot vs robot hasta que uno muera), y la <em>classic</em> (siguelíneas y
+            laberinto), pensada para los más novatos.
           </p>
 
           <p>
@@ -147,7 +148,7 @@
 
 
           <p>
-            Y para que no te quedes pobre por el camino, la misma asociación te
+            Y para que no te arruines por el camino, la misma asociación te
             presta:
           </p>
 
@@ -196,22 +197,24 @@
             Teníamos hasta justo después de semana santa para
             traducir la idea vaga y fantasiosa de un terminator que
             lanzase rayos, en algo que se moviese y funcionase.
-
           </p>
-            Como digo, entonces no habíamos cursado aún ninguna asignatura de
-            electrónica, pero peor es que la placa de arduino se programa
-            en C. Porque hasta la fecha solo habíamos programado en Matlab
-            (ni siquera demasiado)
-            Así que de la ilusión pasamos a la incertidumbre y luego al miedo.
+
           <p>
+            Como digo, entonces no habíamos cursado aún ninguna asignatura de
+            electrónica, pero inquietaba más que la placa de arduino se programase
+            en C, porque hasta la fecha solo habíamos programado en Matlab
+            (ni siquera demasiado).
+            Así que de la ilusión pasamos a la incertidumbre y luego al miedo.
+          </p>
+
 
           <p>
             Por suerte, la asociación de Reset
             organizaba unos talleres.
             Creo que fueron como unos 4 en total, y en ellos nos explicaban
-            cómo hacer determinadas cosas: en uno veíamos como mover los servos,
-            en otro reguladores PID, otro de soldar con estaño, y el último
-            era de impresión 3D.
+            cómo hacer determinadas cosas: en uno nos presentaban el material,
+            en otro cómo mover los servos, otro de soldar con estaño, y el último
+            era de reguladores PID.
             No es que nos hicieran todo el trabajo, pero sí que se iniciaba uno
             con el tema. Junto a toda la información infinita de internet, parecía
             que al final iba a salir un robot digno.
@@ -239,8 +242,8 @@
             ningún diseño CAD para hacer
             el chasis con impresora 3D (y luego habría una larga lista de espera para
             imprimir)... Aparecen de pronto muchos
-            inconvenientes, y no todo el mundo está dispuesto a hacerlo, o
-            simplemente no puede dedicarle tiempo.
+            inconvenientes, y no todo el mundo está dispuesto a hacerlo al final, o
+            simplemente no pueden dedicarle tiempo.
             Así que, sin tampoco anunciarlo, se abandona el proyecto.
           </p>
 
@@ -325,7 +328,7 @@
 
 
           <p>
-            La inversión se reduce al final a unos 40 &euro; (aún había que comprar
+            La inversión se reduce a unos 40&euro; (aún había que comprar
             los sensores).
           </p>
 
@@ -343,7 +346,7 @@
 
           <p>
             Es terriblemente lento y ruidoso, pero hace su labor. Sigue la línea negra
-            incluso en giros rectos y bruscos.
+            incluso en giros muy bruscos.
           </p>
 
         </div>
@@ -380,8 +383,8 @@
             El morro del robot tiene por debajo un banda de sensores infrarrojos.
             Emiten luz y en función de cuánta se le refleje dará un valor mayor o
             menor de tensión, que después leerá el arduino. De esta forma puede averigurarse
-            la posición relativa de la banda de sensores
-            respecto de la línea (mientras esté dentro de la banda).
+            la posición relativa de la línea respecto de la banda de sensores
+            (mientras la línea esté dentro de la banda).
           </p>
 
           <p>
@@ -390,14 +393,14 @@
             de la banda, se podrá intentar corregir el desvio con un controlador.
             En mi caso usé un PID, y fui ajustándolo manualmente. Primero probaba con
             unos valores de los parámetros, veía como tomaba el robot la curva,
-            para cambiar de nuevo los valores, intentando corregir el comportamiento... y así
+            para cambiar de nuevo los valores intentando corregir el comportamiento... y así
             pude estar quizás unas 3 horas hasta que dejaba de salirse.
           </p>
 
           <p>
             Respecto a cómo consigue el robot encontrar la salida en un laberinto,
             al principio a mi me parecía que iba a ser una tarea muy compleja, difícil
-            , y que nos llevaría pensar mucho. Resulta que hay un algoritmo para salir
+            , y que nos llevaría pensar. Resulta que hay un algoritmo para salir
             siempre de un laberinto que es extremadamente simple.
           </p>
 
@@ -415,9 +418,9 @@
           </p>
 
           <p>
-            Y para comprobar que siempre mantiene una distancia prudencial
+            Y para comprobar que mantiene una distancia prudencial
             con la misma pared o no se da de frente contra nada, el robot
-            lleva pegado en uno de sus lados un sensor de proximidad y otro en
+            lleva pegado un sensor de proximidad en uno de sus lados, y otro en
             el frontal.
           </p>
 
@@ -452,7 +455,7 @@
             </div>
           </div>
           <div class="caption">
-            Sensores de proximidad  lateral y frontal.
+            Sensores de proximidad lateral y frontal.
           </div>
         </div>
 
@@ -484,7 +487,7 @@
           <p>
             Hubo gente que se lo curro un montón. Había equipos con su robot
             hecho con impresora 3D muy bonitos. Otros eran auténticas balas
-            haciendo el trazado de línea negra. El que más me impresionó fue
+            haciendo el trazado de línea negra. A mí, el que más me impresionó fue
             uno que podía moverse en cualquier dirección sin girar. Tenía las
             ruedas del robot del siguiente video, sin ser el mismo.
           </p>
@@ -496,11 +499,12 @@
           </div>
 
           <p>
-            Y entonces, con todo el mundo con sus robots llegados del futuro,
+            Y entonces en la competición, estando todo el mundo con sus robots
+            llegados del futuro,
             aparezco yo con un trozo de madera entre las manos. Me habría gustado
             ir con alguien para reirme, pero estando yo solo en el equipo, tampoco
             era una situación para estar yo ahí a carcajada limpia. Así que más bien
-            sentí vergüenza viendo como mi trozo de madera tardaba dos minutos de reloj
+            sentí vergüenza, viendo como mi trozo de madera tardaba dos minutos de reloj
             en hacerse el circuito a su paso. Ahora que ya ha pasado sí me río.
           </p>
 

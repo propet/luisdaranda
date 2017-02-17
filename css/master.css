@@ -158,13 +158,13 @@ body {
 #mifoto {
   padding-left: 0vw;
   padding-right: 0vw;
-  height: 30vh;
+  height: 15vmax;
 }
 
 #miNombre {
   position: absolute;
   bottom: -0.5vh;
-  left: 19vh;
+  left: 15vmax;
   /*font-size: 3vh;*/
   font-size: 1.5vmax;
   font-family: 'Roboto Condensed', sans-serif;
@@ -271,7 +271,7 @@ ul {
 /*Start of proyectos section*/
 /*-----------------------------------------------------------------------------*/
 #proyectos {
-  background-color: #f6f6f6;
+  /*background-color: #f6f6f6;*/
 }
 
 .thumbnail {
@@ -348,7 +348,7 @@ ul {
 #divOllasYtexto {
   font-size: 1.2vmax;
   padding: 8vh;
-  padding-bottom: 11vh;
+  padding-bottom: 2vmax;
 }
 @media screen and (max-width: 800px) {
   #divOllasYtexto {
@@ -372,7 +372,7 @@ ul {
 }
 
 #divContacto {
-  background-color: #f6f6f6;
+  /*background-color: #f6f6f6;*/
   padding-bottom: 8vh;
   /*font-size: 2.3vh;*/
   /*font-size: 1.5vw;*/

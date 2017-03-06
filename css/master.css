@@ -250,12 +250,22 @@ ul {
   /*max-height: 2.7vh;*/
   max-height: 1.6vmax;
 }
-
 @media screen and (max-width: 800px) {
   .logos {
     max-height: 3vmax;
   }
 }
+
+.logosRedes {
+  margin-top: 3vh;
+  max-height: 2.5vmax;
+}
+@media screen and (max-width: 800px) {
+  .logosRedes {
+    max-height: 3.5vmax;
+  }
+}
+
 
 #graficaSkills {
   margin-top: -4vh;

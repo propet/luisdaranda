@@ -164,7 +164,7 @@ body {
 #miNombre {
   position: absolute;
   bottom: -0.5vh;
-  left: 15vmax;
+  left: 10vmax;
   /*font-size: 3vh;*/
   font-size: 1.5vmax;
   font-family: 'Roboto Condensed', sans-serif;

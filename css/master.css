@@ -4,10 +4,11 @@ body {
     font-size: 1.3vmax;
     font-family: Helvetica Neue, 'Open Sans', sans-serif;
 }
+
 @media screen and (max-width: 800px) {
-  body {
-    font-size: 3vmax;
-  }
+    body {
+        font-size: 3vmax;
+    }
 }
 
 .espaciado {
@@ -16,7 +17,7 @@ body {
 }
 
 .btn-navbar {
-  background-color: #fff;
+    background-color: #fff;
 }
 
 .navbar {
@@ -26,14 +27,14 @@ body {
     border-color: transparent;
     border-radius: 0;
     background-color: transparent;
-
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: bold;
     transition: background-color 1s ease;
 }
 
-.navbar .navbar-nav li a, .navbar .navbar-brand {
+.navbar .navbar-nav li a,
+.navbar .navbar-brand {
     color: #fff;
     transition: color 0.5s ease;
 }
@@ -45,7 +46,7 @@ body {
     transition: background-color 0.5s ease;
 }
 
-.navbar .navbar-nav li.active a{
+.navbar .navbar-nav li.active a {
     color: #C9C7C7;
     background-color: transparent;
     transition: background-color 0.5s ease;
@@ -53,16 +54,17 @@ body {
 
 .navbar.opaque {
     /*background-color: #455A64;*/
-    background-color: rgba(0,0,0,0.7);
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.55);
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.55);
 }
 
-.navbar.opaque li a, .navbar.opaque .navbar-brand {
+.navbar.opaque li a,
+.navbar.opaque .navbar-brand {
     color: #fff;
     transition: color 0.5s ease;
 }
 
-.navbar.opaque li a:hover{
+.navbar.opaque li a:hover {
     color: #757575;
     background-color: #CFD8DC;
     transition: background-color 0.5s ease;
@@ -75,366 +77,488 @@ body {
 }
 
 .navbar-collapse.collapse.in {
-  background-color: #000;
+    background-color: #000;
 }
 
 .navbar-brand img {
-  height: 100%;
-  width: auto;
+    height: 100%;
+    width: auto;
 }
 
 .spin {
-  transform: rotate(1080deg);
-  transition: all 0.9s ease;
+    transform: rotate(1080deg);
+    transition: all 0.9s ease;
 }
 
-
 .navbar-brand {
-  padding: 0.3vh;
-  padding-left: 0.5vw;
-
-  opacity: 0;
+    padding: 0.3vh;
+    padding-left: 0.5vw;
+    opacity: 0;
 }
 
 .navbar.opaque .navbar-brand {
-  opacity: 1;
+    opacity: 1;
 }
 
-/*-----------------------------------------------------------------------------*/
-/*Start portada*/
-/*-----------------------------------------------------------------------------*/
+.navbar.opaque li {
+    opacity: 1;
+}
+
+.navbar li {
+    opacity: 0;
+}
+
+
+/* collage portada */
+
 #presentacion {
-  /*background-image: url(../images/collageSinAzul.jpg);*/
-  background-image: url(../images/collageEnergia4.jpg);
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  height: 100vh;
-  width: auto;
+    padding: 1vmin;
+    background-color: rgba(0, 0, 0, 1);
+    height: 100vh;
+    width: 99vw;
+    display: grid;
+    grid-gap: 1vmin;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-areas: "f1 f1 f2  f3  f3  f4  f4  f5  f5" "f1 f1 f2  f3  f3  f4  f4  f5  f5" "f1 f1 f2  fo   fo   fo  f6  f5  f5" "f7 f7 f7  fo   fo   fo  f6  f5  f5" "f7 f7 f7  fo   fo   fo   f8  f8  f8" "f9 f9 f10 f10 f10 f11 f11 f12 f12" "f9 f9 f10 f10 f10 f11 f11 f12 f12";
 }
-@media screen and (max-width: 800px) {
-  #presentacion {
-    /*algunos problemas tienen problemas con background-attachment: fixed;*/
-    background-attachment: scroll;
-  }
+
+#presentacion div.sombra {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#presentacion div.sombra:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: background-color 0.5s ease;
+}
+
+@media only screen and (max-width: 600px) {
+    #presentacion {
+        padding: 1vmin;
+        background-color: rgba(0, 0, 0, 1);
+        height: 100vh;
+        width: 99vw;
+        display: grid;
+        grid-gap: 1vmin;
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-areas: "f1 f1 f1  f3  f3  f3  f5  f5  f5" "f1 f1 f1  f3  f3  f3  f5  f5  f5" "f1 f1 f1  fo   fo   fo  f5  f5  f5" "f7 f7 f7  fo   fo   fo  f5  f5  f5" "f7 f7 f7  fo   fo   fo   f8  f8  f8" "f9 f9 f10 f10 f10 f12 f12 f12 f12" "f9 f9 f10 f10 f10 f12 f12 f12 f12";
+    }
+}
+
+#foto_mia {
+    grid-area: fo;
+    margin: 4vmin;
+    background-image: url(../images/yoPicasso_nombre.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-attachment: fixed; */
+    background-size: contain;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#texto_master {
+    font-weight: bold;
+    grid-area: m;
+    color: #fff;
+    margin-left: 4vmin;
+    margin-right: 1vmin;
+    justify-self: start;
+}
+
+#texto_grado {
+    font-weight: bold;
+    grid-area: g;
+    color: #fff;
+    margin-left: 4vmin;
+    margin-right: 1vmin;
+    justify-self: start;
+}
+
+#foto_1 {
+    grid-area: f1;
+    background-image: url(../images/collage/combustion.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
+
+#foto_2 {
+    grid-area: f2;
+    background-image: url(../images/collage/dstar-flame.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
+
+#foto_3 {
+    grid-area: f3;
+    background-image: url(../images/collage/smog.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
+
+#foto_4 {
+    grid-area: f4;
+    background-image: url(../images/collage/pelton.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
+
+#foto_5 {
+    grid-area: f5;
+    background-image: url(../images/collage/offshore.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
+
+#foto_6 {
+    grid-area: f6;
+    background-image: url(../images/collage/tokamak.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
+
+#foto_7 {
+    grid-area: f7;
+    background-image: url(../images/collage/salientPoles.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
+
+#foto_8 {
+    grid-area: f8;
+    background-image: url(../images/collage/turbine.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
+
+#foto_9 {
+    grid-area: f9;
+    background-image: url(../images/collage/turbinaYgenerador.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
+
+#foto_10 {
+    grid-area: f10;
+    background-image: url(../images/collage/substation.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
+
+#foto_11 {
+    grid-area: f11;
+    background-image: url(../images/collage/newsolarcell.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
+
+#foto_12 {
+    grid-area: f12;
+    background-image: url(../images/collage/Powerelectronics.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-attachment: fixed; */
+    background-size: cover;
 }
 
 
-#presentacionPanel {
-  /*margin-top: 20px;
-  margin-bottom: 130px;*/
-  /*border-radius: 0px;*/
-  height: 100vh;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  /*background-color: rgba(83, 109, 254, 0.9);*/
-  background-color: rgba(0, 0, 0, 0.6);
-  transition: background-color 3s ease;
-
-  -webkit-box-shadow: 7px 2px 12px -3px rgba(0,0,0,0.75);
-  -moz-box-shadow: 7px 2px 12px -3px rgba(0,0,0,0.75);
-  box-shadow: 7px 2px 12px -3px rgba(0,0,0,0.75);
-}
-
-#presentacionPanel:hover {
-  background-color: rgba(0, 0, 0, 0.85);
-  /*background-color: rgba(83, 109, 254, 0.95);*/
-}
-
-#fotoYnombre {
-  /*padding-left: 15px;
-  padding-top: 30px;*/
-  /*height: 30vh;*/
-  margin-left: 1vw;
-  margin-right: 1vw;
-  margin-top: 3vh;
-  position: relative;
-}
-
-#mifoto {
-  padding-left: 0vw;
-  padding-right: 0vw;
-  height: 15vmax;
-}
-
-#miNombre {
-  position: absolute;
-  bottom: -0.5vh;
-  left: 10vmax;
-  /*font-size: 3vh;*/
-  font-size: 1.5vmax;
-  font-family: 'Roboto Condensed', sans-serif;
-  padding-left: 2vh;
-  padding-right: 0vw;
-}
-@media screen and (max-width: 800px) {
-  #miNombre {
-    font-size: 3vmax;
-  }
-}
+/* end of collage portada */
 
 
-#gradoYmaster {
-  margin-left: 1vw;
-  margin-right: 1vw;
-  margin-top: -2vh;
-
-  /*font-size: 2.5vh;*/
-  font-size: 1.3vmax;
-}
-@media screen and (max-width: 800px) {
-  #gradoYmaster {
-    font-size: 2.3vmax;
-    margin-top: -4vmax;
-  }
-}
-
-
-#gradoYmaster h2 {
-  /*font-size: 2.7vh;*/
-  font-size: 1.5vmax;
-  font-weight: bold;
-}
-@media screen and (max-width: 800px) {
-  #gradoYmaster h2 {
-    font-size: 2.5vmax;
-  }
-}
-
-
-#buscandoPracticas {
-  margin-top: 4vh;
-  /*font-size: 2.5vh;*/
-  font-size: 1.3vmax;
-}
-@media screen and (max-width: 800px) {
-  #buscandoPracticas {
-    font-size: 2vmax;
-  }
-}
 /*-----------------------------------------------------------------------------*/
-/*End of portada*/
-/*-----------------------------------------------------------------------------*/
 
 
-/*-----------------------------------------------------------------------------*/
 /*Start of datos de interes*/
+
+
 /*-----------------------------------------------------------------------------*/
+
 ul {
     list-style-type: none;
     padding-left: 2.5vh;
 }
 
 #listaDatos {
-  /*font-size: 2.5vh;*/
-  font-size: 1.3vmax;
+    /*font-size: 2.5vh;*/
+    font-size: 1.3vmax;
 }
 
 @media screen and (max-width: 800px) {
-  #listaDatos {
-    font-size: 3vmax;
-  }
+    #listaDatos {
+        font-size: 3vmax;
+    }
 }
 
 .divLogos {
-  padding-left: 0;
-  padding-right: 0;
-  height: 1vh;
+    padding-left: 0;
+    padding-right: 0;
+    height: 1vh;
 }
 
 .logos {
-  /*max-height: 2.7vh;*/
-  max-height: 1.6vmax;
+    /*max-height: 2.7vh;*/
+    max-height: 1.6vmax;
 }
+
 @media screen and (max-width: 800px) {
-  .logos {
-    max-height: 3vmax;
-  }
+    .logos {
+        max-height: 3vmax;
+    }
 }
 
 .logosRedes {
-  margin-top: 3vh;
-  max-height: 2.5vmax;
-}
-@media screen and (max-width: 800px) {
-  .logosRedes {
-    max-height: 3.5vmax;
-  }
+    margin-top: 3vh;
+    max-height: 2.5vmax;
 }
 
+@media screen and (max-width: 800px) {
+    .logosRedes {
+        max-height: 3.5vmax;
+    }
+}
 
 #graficaSkills {
-  margin-top: -4vh;
-  padding: 6vmax;
+    margin-top: -4vh;
+    padding: 6vmax;
 }
+
+
 /*-----------------------------------------------------------------------------*/
+
+
 /*End of datos de interes*/
+
+
 /*-----------------------------------------------------------------------------*/
 
 
-
 /*-----------------------------------------------------------------------------*/
+
+
 /*Start of proyectos section*/
+
+
 /*-----------------------------------------------------------------------------*/
+
 #proyectos {
-  /*background-color: #f6f6f6;*/
+    /*background-color: #f6f6f6;*/
 }
 
 .thumbnail {
-  position: relative;
-  overflow: hidden;
-
-  font-size: 1.3vmax;
-  margin-left: 1vh;
-  margin-right: 1vh;
+    position: relative;
+    overflow: hidden;
+    font-size: 1.3vmax;
+    margin-left: 1vh;
+    margin-right: 1vh;
 }
+
 @media screen and (max-width: 800px) {
-  .thumbnail h3 {
-    font-size: 3vmax;
-    margin-bottom: -1vmax;
-  }
-  .thumbnail {
-    font-size: 2.5vmax;
-  }
+    .thumbnail h3 {
+        font-size: 3vmax;
+        margin-bottom: -1vmax;
+    }
+    .thumbnail {
+        font-size: 2.5vmax;
+    }
 }
 
 .thumbnail:hover {
-  border-color: #000;
+    border-color: #000;
 }
 
 .caption {
-    position:absolute;
-    top:0;
-    right:0;
+    position: absolute;
+    top: 0;
+    right: 0;
     /*background:rgba(66, 139, 202, 0.75);*/
     background: rgba(83, 109, 254, 0.75);
-    width:100%;
-    height:100%;
-    padding:2%;
+    width: 100%;
+    height: 100%;
+    padding: 2%;
     /*display: none;*/
-    text-align:center;
+    text-align: center;
     vertical-align: middle;
-    color:#fff !important;
-    z-index:2;
+    color: #fff !important;
+    z-index: 2;
     opacity: 0;
     transition: opacity 0.5s ease;
 }
+
 @media screen and (max-width: 800px) {
-  .caption {
-    opacity: 1;
-  }
+    .caption {
+        opacity: 1;
+    }
 }
 
 .thumbnail:hover .caption {
-  /*display: block;*/
-  opacity: 1;
+    /*display: block;*/
+    opacity: 1;
 }
+
+
 /*-----------------------------------------------------------------------------*/
+
+
 /*End of proyectos section*/
+
+
 /*-----------------------------------------------------------------------------*/
 
 
-
 /*-----------------------------------------------------------------------------*/
+
+
 /*Start of sobre mi*/
+
+
 /*-----------------------------------------------------------------------------*/
+
 #sobremiInfo {
-  font-size: 1.3vmax;
+    font-size: 1.3vmax;
 }
+
 @media screen and (max-width: 800px) {
-  #sobremiInfo {
-    font-size: 3vmax;
-  }
+    #sobremiInfo {
+        font-size: 3vmax;
+    }
 }
 
 #imagenOllas {
-  padding-bottom: 2vh;
+    padding-bottom: 2vh;
 }
 
 #divOllasYtexto {
-  font-size: 1.2vmax;
-  padding: 8vh;
-  padding-bottom: 2vmax;
+    font-size: 1.2vmax;
+    padding: 8vh;
+    padding-bottom: 2vmax;
 }
+
 @media screen and (max-width: 800px) {
-  #divOllasYtexto {
-    font-size: 2.5vmax;
-    padding-bottom: 3vh;
-  }
+    #divOllasYtexto {
+        font-size: 2.5vmax;
+        padding-bottom: 3vh;
+    }
 }
+
+
 /*-----------------------------------------------------------------------------*/
+
+
 /*End of sobre mi*/
+
+
 /*-----------------------------------------------------------------------------*/
 
 
 /*-----------------------------------------------------------------------------*/
+
+
 /*Start of contacto*/
+
+
 /*-----------------------------------------------------------------------------*/
+
 #SixtinaManos {
-  width: 100%;
-  height: auto;
-  padding-left: 1.5vh;
-  padding-right: 1.5vh;
+    width: 100%;
+    height: auto;
+    padding-left: 1.5vh;
+    padding-right: 1.5vh;
 }
 
 #divContacto {
-  /*background-color: #f6f6f6;*/
-  padding-bottom: 8vh;
-  /*font-size: 2.3vh;*/
-  /*font-size: 1.5vw;*/
-  font-size: 1.5vmax;
+    /*background-color: #f6f6f6;*/
+    padding-bottom: 8vh;
+    /*font-size: 2.3vh;*/
+    /*font-size: 1.5vw;*/
+    font-size: 1.5vmax;
 }
+
 @media screen and (max-width: 800px) {
-  #divContacto {
-    /*font-size: 3vh;*/
-    font-size: 3vmax;
-  }
+    #divContacto {
+        /*font-size: 3vh;*/
+        font-size: 3vmax;
+    }
 }
 
 #contactos {
-  padding-top: 6vh;
+    padding-top: 6vh;
 }
 
 .infoContacto:hover span {
-  color: #000;
+    color: #000;
 }
 
-.infoContacto:hover{
-  color: rgb(83, 109, 254);
-
+.infoContacto:hover {
+    color: rgb(83, 109, 254);
 }
 
 a:hover {
     text-decoration: none;
 }
+
 .glyphicon {
-  color: rgb(83, 109, 254);
+    color: rgb(83, 109, 254);
 }
+
+
 /*-----------------------------------------------------------------------------*/
+
+
 /*End of contacto*/
+
+
 /*-----------------------------------------------------------------------------*/
 
 
-
 /*-----------------------------------------------------------------------------*/
+
+
 /*Start of footer*/
+
+
 /*-----------------------------------------------------------------------------*/
+
 #footerFinal {
     padding: 3vh;
     color: white;
-
     /*background-color: #455A64;*/
     background-color: #000;
 }
 
 #pajarito {
-  width: 37%;
-  height: auto;
+    width: 37%;
+    height: auto;
 }
+
+
 /*-----------------------------------------------------------------------------*/
+
+
 /*End of footer*/
+
+
 /*-----------------------------------------------------------------------------*/

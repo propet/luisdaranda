@@ -175,24 +175,6 @@ body {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-#texto_master {
-    font-weight: bold;
-    grid-area: m;
-    color: #fff;
-    margin-left: 4vmin;
-    margin-right: 1vmin;
-    justify-self: start;
-}
-
-#texto_grado {
-    font-weight: bold;
-    grid-area: g;
-    color: #fff;
-    margin-left: 4vmin;
-    margin-right: 1vmin;
-    justify-self: start;
-}
-
 #foto_1 {
     grid-area: f1;
     background-image: url(../images/collage/combustion.jpg);

@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Title -->
+    <title>luisdomingoaranda</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <!-- Bootstrap & Jquery -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Syntax coloring -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/solarized-light.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+    <!-- Color palette -->
+    <link rel="stylesheet" href="/css/palette2.css">
+    <!-- Custom proyecto CSS -->
+    <link rel="stylesheet" href="/css/projects.css">
+    <!-- Slide animation -->
+    <link rel="stylesheet" href="/css/slideAnimation.css">
+    <!-- Emojis -->
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+
+  <!-- _____________________________________________________________________ -->
+  <!-- Navigation -->
+  <!-- _____________________________________________________________________ -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <a href="#myPage" class="navbar-brand">
+                <img class="img-responsive" id="molino" src="/images/molinilloHome.png" alt="molino">
+              </a>
+              <button type="button" class="navbar-toggle btn-navbar" data-toggle="collapse"
+               data-target="#myNavbar" id="botonNav">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right pull-right">
+                  <li><a href="/index.html#projects">Projects</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <!-- _____________________________________________________________________ -->
+  <!-- End of navigation -->
+  <!-- _____________________________________________________________________ -->
+
+
+
+  <!-- _____________________________________________________________________ -->
+  <!-- presentacion con titulo -->
+  <!-- _____________________________________________________________________ -->
+  <div class="container-fluid" id="presentacion" style="background-image: url(thumbnail.jpg)">
+    <div class="row">
+      <h1 class="text-center" id="tituloProyecto"><b>PFG: Simulación de las propiedades de un
+      refractario libre de carbono</b></h1>
+    </div>
+  </div> <!-- end of container-fluid -->
+  <!-- _____________________________________________________________________ -->
+  <!-- end of presentacion con titulo -->
+  <!-- _____________________________________________________________________ -->
+
+
+
+  <!-- _____________________________________________________________________ -->
+  <!-- Contenido -->
+  <!-- _____________________________________________________________________ -->
+  <div class="container-fluid" id="contenido">
+
+    <!-- _____________________________________________________________________ -->
+    <!-- bloque de texto -->
+    <!-- _____________________________________________________________________ -->
+    <div class="row">
+
+        <!-- columna lateral -->
+        <div class="col-sm-4 side">
+        </div>
+
+        <!-- columna central con contenido -->
+        <div class="col-sm-4">
+          <div class="page-header">
+            <h2> <small>
+                  06/02/2016 - 01/09/2016
+                  <br>
+                  <em>
+                    <a href="/docs/pfg.pdf" download="pfg.pdf">
+                      Descarga el pdf con del PFG completo.
+                    </a>
+                  </em>
+                </small>
+            </h2>
+          </div>
+
+          <p>Así se tituló mi proyecto de fin de grado. Lo solicité a través de
+          la web de la escuela, donde algunos profesores suben propuestas de trabajos
+          para los estudiantes, y se me concedió en febrero, empezando el
+          segundo semestre del último curso del grado. Finalmente lo presenté
+          en septiembre.</p>
+
+          <p>
+            En un principio tenía la intención de proponer yo mismo un
+            tema para el proyecto, pero:
+          </p>
+
+          <ul>
+            <li>Estimar el tiempo que te puede llevar una tarea es difícil, especialmente
+              si no tienes experiencia haciendo nada parecido, o tan amplio.
+            </li>
+            <li>Puede que tengas muy clara tu idea, pero entonces tienes que conseguir
+              que algún profesor esté dispuesto a hacerte de tutor. Si no encuentras a
+              nadie libre, relacionado con la materia, a lo mejor te toca cambiar de idea.
+            </li>
+          </ul>
+
+          <p>
+            Temía especialmente que se me diera el segundo caso. En cuarto eramos
+            una clase de más de 100 personas, todos buscando proyecto, todos con los
+            mismos profesores, y ni siquiera parecía que fuésemos problema de la
+            escuela de industriales. Viniendo de minas (de los dos primeros cursos del grado),
+            algunos nos proponían ir a buscar allí. Ellos ya estaban saturados.
+          </p>
+
+          <p>
+            La situación para encontrar un proyecto estaba tensa, así
+            que lo mejor que me pudo pasar fue encontrar un tema colgado en la web.
+            Joaquín Ordieres, el director del departamento de dirección de proyectos y
+            estadística, buscaba a alguien para simular las propiedades de un refractario
+            libre de carbono. Que no es que fuese un título que me ganase desde el
+            minuto 0, pero leyendo un poco más a fondo la descripción, me convenció.
+            Tenía simulación numérica (elementos discretos), me pedía utilizar linux,
+            preparar scripts... perfecto para abandonar el papel y el boli, y
+            hacer un poco de number-crunching <i class="em em-1234"></i>
+            <i class="em em-facepunch"></i> <i class="em em-rage1"></i>.
+            Vamos para allá con ello.
+          </p>
+
+
+          <div class="jumbotron">
+            <h1>Índice</h1>
+            <ul id="indice">
+              <li><a href="#objetivo">Objetivo</a></li>
+              <li><a href="#alcance">Alcance</a></li>
+              <li><a href="#simulacion">Simulación del proceso de compresión</a></li>
+              <li><a href="#herramientas">Herramientas</a></li>
+              <li><a href="#evaluacion">Evaluación de propiedades</a></li>
+              <li><a href="#distribuciones">Distintas distribuciones granulométricas</a></li>
+            </ul>
+
+          </div>
+
+
+          <h2 id="objetivo" class="secondary-text-color">
+            <b>Objetivo</b>
+          </h2>
+
+          <p>
+            Se pide simular la fabricación de una probeta (pastilla) hecha a partir de
+            polvos refractarios, concretamente de alúmina (Al2O3) y magnesia (MgO), para
+            después analizar las propiedades del material producido: resistencia mecánica,
+            permeabilidad, densidad, etc.
+          </p>
+
+          <p>
+            El interés de tener un material refractario de mejores características
+            puede ser útil para producir aceros ultra-limpios, por ejemplo.
+            Los hornos empleados en la industria siderúrgica emplean refractarios en su contacto
+            con el metal líquido y escoria producida (vease un ejemplo de horno en la figura 1).
+            Estos pueden terminar disueltos
+            en mayor o menor medida en la aleación, principalmente debido a su reacción
+            con las escorias (compuestas por óxidos), formando lo que se conocen
+            como inclusiones exógenas (de fuera de la aleación). Y estas inclusiones
+            de elementos extraños al metal repercute negativamente
+            en las cualidades finales del producto, lo que se intenta
+            limitar al mínimo
+            en los aceros ultra-limpios. Por tanto, sería deseable tener un
+            material refractario que sea poco atacable por las escorias, y no termine
+            desprendiéndose de la pared.
+          </p>
+
+
+          <!-- Descarga el pdf con mi proyecto de fin de grado si quieres
+          <a href="../uploads/pfg.pdf" download="pfg.pdf">Download</a> -->
+
+        </div>
+        <!-- end of columna central con contenido -->
+
+        <!-- columna lateral -->
+        <div class="col-sm-4 side">
+        </div>
+
+    </div> <!-- end of row -->
+    <!-- _____________________________________________________________________ -->
+    <!-- end of bloque de texto -->
+    <!-- _____________________________________________________________________ -->
+
+    <!-- _____________________________________________________________________ -->
+    <!-- imagen horno electrico -->
+    <!-- _____________________________________________________________________ -->
+    <div class="row">
+      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img class="img-responsive" src="./images/horno-cuchara.jpg" alt="horno">
+          <div class="caption">
+            Figura 1: Horno de arco eléctrico
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-4">
+      </div>
+    </div>
+    <!-- _____________________________________________________________________ -->
+    <!-- end of imagen horno electico -->
+    <!-- _____________________________________________________________________ -->
+
+
+    <!-- _____________________________________________________________________ -->
+    <!-- bloque de texto -->
+    <!-- _____________________________________________________________________ -->
+    <div class="row">
+      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-4">
+        <p>
+          Las características de un refractario vendrán dadas por la granulometría de
+          los polvos con los que se ha preparado la mezcla, la fuerza aplicada en la
+          etapa de compresión de estos polvos, y finalmente, el tipo de sinterizado
+          (tratamiento térmico) aplicado. En la figura 2 se muestran los pasos que
+          se siguen para producir una probeta, y en la figura 3, algunos ensayos
+          a los que se somete esta para analizar sus cualidades.
+        </p>
+
+      </div>
+      <div class="col-sm-4">
+      </div>
+    </div>
+    <!-- _____________________________________________________________________ -->
+    <!-- end of bloque de texto -->
+    <!-- _____________________________________________________________________ -->
+
+
+
+    <!-- _____________________________________________________________________ -->
+    <!-- imagen compresion y sinterizado -->
+    <!-- _____________________________________________________________________ -->
+    <div class="row">
+      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <div class="row">
+            <div class="col-xs-6">
+              <img class="img-responsive" src="./images/compresionEtapas.jpg" alt="horno">
+            </div>
+            <div class="col-xs-6">
+              <img class="img-responsive" src="./images/sinterizado.jpg" alt="horno">
+            </div>
+          </div>
+          <div class="caption">
+            Figura 2: Compresión del material, y sinterizado.
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-4">
+      </div>
+    </div>
+    <!-- _____________________________________________________________________ -->
+    <!-- end of imagen compresion y sinterizado -->
+    <!-- _____________________________________________________________________ -->
+
+    <!-- _____________________________________________________________________ -->
+    <!-- imagen analisis probeta -->
+    <!-- _____________________________________________________________________ -->
+    <div class="row">
+      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <div class="row">
+            <div class="col-xs-4">
+              <img class="img-responsive" src="./images/test_compresion.jpg" alt="horno">
+            </div>
+            <div class="col-xs-4">
+              <img class="img-responsive" src="./images/test_diametral2.jpg" alt="horno">
+            </div>
+            <div class="col-xs-4">
+              <img class="img-responsive" src="./images/test_flexion2.jpg" alt="horno">
+            </div>
+          </div>
+          <div class="caption">
+            Figura 3: Análisis sobre la probeta: test de compresión (izquierda),
+            test diametral (medio), y test de flexión (derecha) .
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-4">
+      </div>
+    </div>
+    <!-- _____________________________________________________________________ -->
+    <!-- end of imagen analisis probeta -->
+    <!-- _____________________________________________________________________ -->
+
+
+
+    <!-- _____________________________________________________________________ -->
+    <!-- bloque de texto -->
+    <!-- _____________________________________________________________________ -->
+    <div class="row">
+      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-4">
+        <p>
+          Pero la preparación y análisis manual de las probetas es una tarea larga y laboriosa.
+          Sería más conveniente simular el proceso para poder automatizarlo. Y si
+          tomamos las granulometrías empleadas, las fuerzas de compresión y
+          parámetros de sinterización como variables de diseño, podemos plantear un
+          problema de optimización donde el objetivo sería minimizar o maximizar
+          alguna función de evaluación que represente la calidad del refractario
+          producido.
+        </p>
+        <br>
+
+        <h2 id="alcance" class="secondary-text-color">
+          <b>Alcance</b>
+        </h2>
+
+        <p>
+          Este trabajo se limita a la simulación del proceso de compresión, evaluación
+          de algunas propiedades de la probeta producida (densidad, porosidad y permeabilidad),
+          y proponer una vía para simular la sinterización, como relevo para el siguiente
+          alumno que continúe con el trabajo como parte de su proyecto de fin de grado o master.
+        </p>
+        <br>
+
+        <h2 id="simulacion" class="secondary-text-color">
+          <b>Simulación del proceso de compresión</b>
+        </h2>
+
+
+        <p>
+          La mezcla de cerámicas (alúmina y magnesia) estudiada está compuesta por
+          muchísimas partículas diminutas (empieza a contar cuántos trozitos de café molido
+          te sirves en la cafetera, y estarás por el mismo orden). Y la idea es simular
+          el movimiento del conjunto siguiéndole el rastro a todas y cada una de las
+          partículas, usando la vieja segunda ley de Newton junto con las fuerzas a las
+          que está sometida cada una. Tan simple que ni siquiera hace gracia, solo es
+          fuerza bruta. Con todo, es la técnica que proporciona los resultados de mayor
+          fidelidad, y se conoce como el método de elementos discretos.
+        </p>
+
+        <p>
+          La pena es que en el estado de nuestra civilización los ordenadores aún
+          no son capaces de calcular la trayectoria de miles de millones de puntos
+          materiales, que interaccionan entre si y con el entorno, sin que nos
+          hagamos antes polvo.
+        </p>
+
+        <img class="img-responsive imagenSuelta"
+        src="./images/stillWaiting.jpg" alt="muerto">
+
+        <p>
+          Así que se hace inevitable hacer simplificaciones:
+
+          <ul>
+            <li>
+              En vez de calcular la trayectoria de todas y cada una de las partículas, solo
+              se consideran las más grandes, y las más pequeñas se desprecian, como
+              si nunca hubiesen existido. Su influencia en el movimiento y posición
+              del conjunto se tiene en cuenta a través de unos parámetros de correción,
+              que deben ajustarse con la información de ensayos experimentales. La idea es
+              obtener el mismo comportamiento que se tendría en el caso real, con menos
+              partículas, pero con algunos parámetros cambiados para "dar el pego". Algunos
+              parámetros de este estilo son: los coeficientes de fricción, coeficientes de
+              restitución para cada par de interacciones (entre dos tipos de material), fuerzas
+              o energías de cohesión, incluso módulos de elasticidad.
+            </li>
+            <li>
+              Otra simplificación que se suele hacer es considerar las partículas como
+              esféricas. Sencillamente porque es más rápido comprobar si dos esferas se están
+              solapando (colisionando), que comprobar si lo hacen dos cuerpos irregulares de
+              geometría cualquiera. En el caso de que resulte determinante tomar unas
+              formas lo más parecidas a las reales, una posible estrategia es solapar varias
+              esferas hasta aproximarse lo suficiente al resultado buscado. Vease la figura 4.
+            </li>
+            <div class="thumbnail">
+              <img class="img-responsive"
+              src="./images/particulasIrregulares.jpg" alt="solape esferas">
+              <div class="caption">
+                Figura 4: Composición de esferas para aproximar una partícula irregular.
+              </div>
+            </div>
+          </ul>
+        </p>
+
+
+        <br>
+
+        <h2 id="herramientas" class="secondary-text-color">
+          <b>Herramientas</b>
+        </h2>
+
+        <p>
+          Para implementar el método de elementos discretos, se escogió un código libre:
+          <a target="_blank"
+          href="http://www.cfdem.com/liggghtsr-open-source-discrete-element-method-particle-simulation-code">
+          LIGGGHTS</a>
+          (LAMMPS Improved for General Granular and Granular Heat Transfer Simulations).
+          Con la principal ventaja de tenerlo de forma gratuita. Razón aún más importante
+          cuando se piensa utilizar un cluster (conjunto de ordenadores interconectados), de otra
+          forma casi seguro que habría que conseguir una licencia por cada ordenador.
+        </p>
+
+
+        <p>
+          Respecto a su uso, como no tiene interfaz gráfica, toca mirarse los comandos
+          de la documentación y después montarlos en un script que el programa pueda
+          entender. El sistema es bastante flexible en el sentido que de que los comandos
+          te van a permitir hacer practicamente cualquier cosa que quieras, pero a cambio
+          habrá que echarle tiempo y paciencia.
+        </p>
+
+        <p>
+          Típicamente en cualquier simulación se siguen una serie de pasos, con cada uno de
+          ellos asociado a un conjunto de comandos que pueden o deben usarse, como se muestra en
+          la figura 5.
+        </p>
+
+        <div class="thumbnail">
+          <img id="imagenSecuenciaComandos" class="img-responsive"
+           src="./images/liggghts.jpg" alt="liggghts">
+          <div class="caption">
+            Figura 5: secuencia típica de comandos en una simulación con LIGGGHTS.
+          </div>
+        </div>
+
+        <p>
+          En el caso de necesitar dividir una simulación en x etapas, también podría
+          conectarse la salida de una simulación con la entrada de la siguiente.
+        </p>
+
+        <p>
+          Al final, para el caso que toca, que es simular el proceso de compresión,
+          la cosa quedaría como se ve en la figura 6.
+        </p>
+
+
+      </div>
+      <div class="col-sm-4">
+
+      </div>
+    </div>
+    <!-- _____________________________________________________________________ -->
+    <!-- end of bloque de texto -->
+    <!-- _____________________________________________________________________ -->
+
+
+    <!-- _____________________________________________________________________ -->
+    <!-- imagen analisis gif compresion -->
+    <!-- _____________________________________________________________________ -->
+    <div class="row">
+      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img class="img-responsive" src="./images/insertec2.gif" alt="horno">
+          <div class="caption">
+            Figura 6: Simulación de la compresión.
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-4">
+      </div>
+    </div>
+    <!-- _____________________________________________________________________ -->
+    <!-- end of imagen gif compresion -->
+    <!-- _____________________________________________________________________ -->
+
+
+    <!-- _____________________________________________________________________ -->
+    <!-- bloque de texto -->
+    <!-- _____________________________________________________________________ -->
+    <div class="row">
+      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-4">
+        <p>
+          Donde después de comprimir el material, se retira la prensa y después
+          las paredes de la matriz para comprobar la consistencia del disco (si se
+          desparramase entonces, la probeta no podría meterse al horno para
+          sinterizarse, y se descarta).
+        </p>
+        <br>
+
+        <h2 id="evaluacion" class="secondary-text-color">
+          <b>Evaluación de propiedades</b>
+        </h2>
+
+        <p>
+          Tras el proceso de compactación, se pide hallar la densidad y porosidad
+          del disco producido.
+        </p>
+
+        <p>
+          La densidad se obtendrá a partír de las masas de las partículas que forman
+          el disco, y la porosidad ($\epsilon$) se define como la fracción de espacio hueco en el
+          volumen del disco:
+        </p>
+
+        $$\epsilon = \frac{V_{disco} - V_{particulas}}{V_{disco}}$$
+
+        <p>
+          En cualquier caso, toca definir cúal es el volumen del disco. Que parece una
+          cuestión sencilla, pero tiene su miga. Con la vista es trivial identificar la frontera
+          del material, pero dar un valor al diámetro de ese disco en función únicamente de la
+          posición de las partículas puede llevar a error si no se tiene cuidado.
+          Por ejemplo, si se considerase
+          una frontera que circunscribiese a todas las partículas, una esfera que esté algo
+          desprendida del resto, puede llevar a que se tome un excesivo espacio hueco, lo que
+          resultaría en un valor anormalmente alto de la porosidad para el material (figura 7).
+        </p>
+
+        <div class="thumbnail">
+          <img class="img-responsive" src="./images/dimensionesDisco.jpg" alt="dimensionesDisco">
+          <div class="caption">
+            Figura 7: Dos formas de elegir el disco representativo.
+          </div>
+        </div>
+
+        <p>
+          En cambio, parece más razonable tomar un menor diámetro del disco, incluso
+          metiéndose dentro de la "cama" de partículas, para asegurar que no pase esto.
+          Entonces surge un nuevo problema: cómo calcular los volúmenes de las partículas
+          que justo intersectan con la frontera del disco representativo, imaginario que
+          nos hemos inventado.
+        </p>
+
+        <p>
+          Pues pueden hacerse las integrales triples para cada partícula que intersecta
+          (vease la figura 9), y se tendrán diferentes tipos de integrales para
+          posiciones relativas entre esfera y frontera, que pueden verse en las
+          páginas 35-38 del pdf.
+        </p>
+
+        <div class="thumbnail">
+          <img class="img-responsive" src="./images/ejemploIntegralTriple.jpg" alt="dimensionesDisco">
+          <div class="caption">
+            Figura 8: Un caso donde la partícula corta con la frontera del disco, con su
+            centro fuera de él.
+          </div>
+        </div>
+
+        <p>
+          Pero otra vía más sencilla de implementar, y que no caí
+          en ellas hasta después, es integrar por Montecarlo. Que es insertar aleatoriamente
+          una cantidad de puntos dentro del dominio que interese (en este caso
+          dentro del disco representativo que se haya tomado), y calcular directamente
+          la fracción de huecos (porosidad), como la fracción de puntos que ha caido
+          dentro de espacio hueco ($N_{huecos}$), frente al total de puntos insertados
+          ($N_{introducidos}$).
+        </p>
+
+        $$\epsilon = \frac{V_{huecos}}{V_{disco}} = \frac{N_{huecos}}{N_{introducidos}}$$
+
+        <p>
+          Si además se subdividiese el dominio del disco en celdas de Voronoi (figura 9), que
+          cada una ellas bordee una sola partícula, se podrá conocer la porosidad
+          localmente (a nivel de cada celda de Voronoi), sabiendo qué fracción de
+          puntos introducidos en la celda de Voronoi, han finalmente caido fuera de
+          la esfera.
+        </p>
+
+      </div>
+      <div class="col-sm-4">
+      </div>
+    </div>
+    <!-- _____________________________________________________________________ -->
+    <!-- end of bloque de texto -->
+    <!-- _____________________________________________________________________ -->
+
+
+    <!-- _____________________________________________________________________ -->
+    <!-- imagen celdas voronoi -->
+    <!-- _____________________________________________________________________ -->
+    <div class="row">
+      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img class="img-responsive" src="./images/teselacionVoronoiAzul.jpg" alt="voronoi">
+          <div class="caption">
+            Figura 9: Subdivisión del disco en celdas de Voronoi ponderadas.
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-4">
+      </div>
+    </div>
+    <!-- _____________________________________________________________________ -->
+    <!-- end of imagen celdas voronoi -->
+    <!-- _____________________________________________________________________ -->
+
+
+    <!-- _____________________________________________________________________ -->
+    <!-- bloque de texto -->
+    <!-- _____________________________________________________________________ -->
+    <div class="row">
+      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-4">
+
+        <p>
+          Asociando la porosidad de cada celda con la posición del centro de la
+          partícula, e interpolando espacialmente entre todos los valores, puede
+          visualizarse la porosidad local haciendo una especie de
+          barrido a lo scanner de rayos X, como se muestra en la figura 10.
+        </p>
+
+      </div>
+      <div class="col-sm-4">
+      </div>
+    </div>
+    <!-- _____________________________________________________________________ -->
+    <!-- end of bloque de texto -->
+    <!-- _____________________________________________________________________ -->
+
+
+    <!-- _____________________________________________________________________ -->
+    <!-- imagen porosidad local -->
+    <!-- _____________________________________________________________________ -->
+    <div class="row">
+      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img class="img-responsive" src="./images/porosidadLocal2.gif" alt="porosidadLocal">
+          <div class="caption">
+            Figura 10: Porosidad local en distintas secciones del disco. 1: totalmente hueco,
+            0: totalmente macizo.
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-4">
+      </div>
+    </div>
+    <!-- _____________________________________________________________________ -->
+    <!-- end of imagen porosidad local -->
+    <!-- _____________________________________________________________________ -->
+
+
+    <!-- _____________________________________________________________________ -->
+    <!-- bloque de texto -->
+    <!-- _____________________________________________________________________ -->
+    <div class="row">
+      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-4">
+
+        <p>
+          Respecto al cálculo de la permeabilidad, no resultó para nada ser una tarea
+          sencilla. Las fórmulas analíticas no prometían dar unas estimaciones
+          razonables para un rango de granulometrías como con el que se necesitaba
+          trabajar, y por tanto no quedó más alternativa que emplear otra vez
+          métodos numéricos.
+        </p>
+
+        <p>
+          La forma más directa de calcular la permeabilidad sería emplear las ecuaciones
+          de Navier-Stokes, o de Boltzmann (método de Lattice-Boltzmann), para obtener
+          el flujo de fluido a través de una sección del disco (perpendicular a la
+          dirección del flujo), cuando se aplica un gradiente de presiones conocido, a través
+          de la ley de Darcy, que dice:
+        </p>
+
+        $$q = - \frac{k}{\mu} \nabla P $$
+
+        <p>
+          donde $q$ es el flujo, $k$ es la permeabilidad absoluta, $\mu$ la
+          viscosidad dinámica, y $\nabla P$ el gradiente de presiones.
+        </p>
+
+        <p>
+          Sin embargo, es una vía muy costosa (bastante más que el propio
+          análisis de elementos discretos), principalmente debido a que el dominio
+          que se tendría que utilizar tendría que ser tan grande como aquel que
+          sea capaz de representar la granulometría de la mezcla. Practicamente
+          el disco entero con todas sus partículas.
+        </p>
+
+        <p>
+          La alternativa más modesta, es emplear un método de redes hidráulicas, donde
+          se supone que los huecos entre partículas (poros) se unen a través de tubos
+          de mayor o menor diámetro, por los que se considera que el flujo es laminar.
+        </p>
+
+        <p>
+          Conociéndose la conductividad entre los distintos poros, y las condiciones de
+          contorno (gradiente de presiones entre las caras), puede resolverse la presión
+          en cada uno de los poros (también llamados nodos). Y luego el flujo entre nodos
+          con la diferencia de presiones y conductividad. Un ejemplo de una red hidraúlica
+          de este estilo se ve en la figura 11.
+        </p>
+
+      </div>
+      <div class="col-sm-4">
+      </div>
+    </div>
+    <!-- _____________________________________________________________________ -->
+    <!-- end of bloque de texto -->
+    <!-- _____________________________________________________________________ -->
+
+
+    <!-- _____________________________________________________________________ -->
+    <!-- imagen redes hidraulicas -->
+    <!-- _____________________________________________________________________ -->
+    <div class="row">
+      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img class="img-responsive" src="./images/presionesTubos.jpg" alt="porosidadLocal">
+          <div class="caption">
+            Figura 11:  Red hidraúlica. 3 bar (amarillo) en la cara superior, 2 bar
+            (morado) en la cara inferior.
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-4">
+      </div>
+    </div>
+    <!-- _____________________________________________________________________ -->
+    <!-- end of imagen redes hidraulicas -->
+    <!-- _____________________________________________________________________ -->
+
+
+    <!-- _____________________________________________________________________ -->
+    <!-- bloque de texto -->
+    <!-- _____________________________________________________________________ -->
+    <div class="row">
+      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-4">
+
+        <p>
+          Por desgracia, mi solución en Matlab era más lenta que el caballo del
+          malo, y apenas podía resolver redes con más de 3000 nodos. Así que
+          este fue un pequeño fracaso mio intentando calcular la permeabilidad
+          del disco.
+        </p>
+        <br>
+
+        <h2 id="distribuciones" class="secondary-text-color">
+          <b>Distintas distribuciones granulométricas</b>
+        </h2>
+
+        Respecto a la forma que podían tener las granulometrías de las
+        cerámicas a insertar en la matriz para comprimirse, se tomaron distintas
+        distribuciones de tamaños:
+
+        <ul>
+          <li>Único tamaño posible para cada tipo de partícula (MgO, Al2O3).</li>
+          <li>Distribución uniforme.</li>
+          <li>Distribución normal.</li>
+          <li>Granulometría de una mezcla real, proporcionada por la empresa <em>Insertec</em>.</li>
+        </ul>
+
+        Para cada una de estas granulometrías subí una
+        <a target="_blank" href="https://github.com/simulacionRefractarioPFG">plantilla a github</a>
+        sobre la se pueden especificar los parámetros de la distribución. Y después
+        se calculó para un caso concreto de los parámetros, para mostrar el aspecto
+        de cada una de las distribuciones (figuras 12-15):
+
+      </div>
+      <div class="col-sm-4">
+      </div>
+    </div>
+    <!-- _____________________________________________________________________ -->
+    <!-- end of bloque de texto -->
+    <!-- _____________________________________________________________________ -->
+
+
+    <!-- _____________________________________________________________________ -->
+    <!-- imagen radios constantes -->
+    <!-- _____________________________________________________________________ -->
+    <div class="row">
+      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <div class="row">
+            <div class="col-xs-4">
+              <img class="img-responsive" src="./images/barrasDistribucionRadiosConstantes.jpg" alt="dist">
+            </div>
+            <div class="col-xs-4">
+              <img class="img-responsive" src="./images/rCons.jpg" alt="blender">
+            </div>
+            <div class="col-xs-4">
+              <img class="img-responsive" src="./images/fuerza-desplazamientoRadiosConstante.jpg" alt="graph">
+            </div>
+          </div>
+          <div class="caption">
+            Figura 12: Partículas de magnesia de 700 micras, y de alúmina de 300 micras.
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-4">
+      </div>
+    </div>
+    <!-- _____________________________________________________________________ -->
+    <!-- end of imagen radios constantes -->
+    <!-- _____________________________________________________________________ -->
+
+
+
+    <!-- _____________________________________________________________________ -->
+    <!-- imagen  distribucion uniformes -->
+    <!-- _____________________________________________________________________ -->
+    <div class="row">
+      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <div class="row">
+            <div class="col-xs-4">
+              <img class="img-responsive" src="./images/barrasDistribucionRadiosUniformes2.jpg" alt="dist">
+            </div>
+            <div class="col-xs-4">
+              <img class="img-responsive" src="./images/Runiformes2_recortada2.jpg" alt="blender">
+            </div>
+            <div class="col-xs-4">
+              <img class="img-responsive" src="./images/fuerza-desplazamientoUniforme.jpg" alt="graph">
+            </div>
+          </div>
+          <div class="caption">
+            Figura 13: Partículas con distribución uniforme entre 300 y 1100 micras. El 70% de la
+            masa de la mezcla la forman las partículas de magnesia, el resto de alúmina.
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-4">
+      </div>
+    </div>
+    <!-- _____________________________________________________________________ -->
+    <!-- end of imagen distribucion uniformes -->
+    <!-- _____________________________________________________________________ -->
+
+
+    <!-- _____________________________________________________________________ -->
+    <!-- imagen  distribucion normal -->
+    <!-- _____________________________________________________________________ -->
+    <div class="row">
+      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <div class="row">
+            <div class="col-xs-4">
+              <img class="img-responsive" src="./images/barrasDistribucionRadiosNormales.jpg" alt="dist">
+            </div>
+            <div class="col-xs-4">
+              <img class="img-responsive" src="./images/rNormales_recortada.jpg" alt="blender">
+            </div>
+            <div class="col-xs-4">
+              <img class="img-responsive" src="./images/fuerza-desplazamientoNormal.jpg" alt="graph">
+            </div>
+          </div>
+          <div class="caption">
+            Figura 14: Partículas con distribución normal, tamaño medio de 400 micras,
+            y desviación típica de 60 micras.
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-4">
+      </div>
+    </div>
+    <!-- _____________________________________________________________________ -->
+    <!-- end of imagen distribucion normal -->
+    <!-- _____________________________________________________________________ -->
+
+
+    <!-- _____________________________________________________________________ -->
+    <!-- imagen  distribucion real -->
+    <!-- _____________________________________________________________________ -->
+    <div class="row">
+      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <div class="row">
+            <div class="col-xs-4">
+              <img class="img-responsive" src="./images/barrasDistribucionRadiosInsertec.jpg" alt="dist">
+            </div>
+            <div class="col-xs-4">
+              <img class="img-responsive" src="./images/insertec_recortada.jpg" alt="blender">
+            </div>
+            <div class="col-xs-4">
+              <img class="img-responsive" src="./images/fuerza-desplazamientoInsertec.jpg" alt="graph">
+            </div>
+          </div>
+          <div class="caption">
+            Figura 15: Partículas según la distribución proporcionada por la empresa
+            <em>Insertec</em>.
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-4">
+      </div>
+    </div>
+    <!-- _____________________________________________________________________ -->
+    <!-- end of imagen distribucion real -->
+    <!-- _____________________________________________________________________ -->
+
+
+
+
+
+  </div> <!-- end of container -->
+  <!-- _____________________________________________________________________ -->
+  <!-- end of contenido -->
+  <!-- _____________________________________________________________________ -->
+
+
+
+  <!-- _____________________________________________________________________ -->
+  <!-- footer -->
+  <!-- _____________________________________________________________________ -->
+  <footer id="footerFinal">
+        <div class="container-fluid text-center">
+          <div class="col-sm-8">
+            <blockquote>
+              <p>Nunca envies a un humano a hacer el trabajo de una máquina.</p>
+              <footer style="color: white;">Agente Smith. Matrix.</footer>
+            </blockquote>
+          </div>
+          <div class="col-sm-4">
+            <img id="pajarito" src="/images/drinkingBird.gif" alt="drinkingBird">
+          </div>
+        </div>
+    </footer>
+    <!-- _____________________________________________________________________ -->
+  <!-- end of footer -->
+  <!-- _____________________________________________________________________ -->
+
+
+
+  <!-- SCRIPTS -->
+  <!-- Syntax coloring -->
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- Latex -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <!-- Scripts -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+      // Opaque navbar from first section
+      $(window).scroll(function() {
+          if ($(this).scrollTop() > $("#presentacion").height() - 5 &&
+          (! $('#botonNav')[0].hasAttribute('aria-expanded'))) {
+            $('.navbar').addClass('opaque');
+          } else {
+            if (! $('#botonNav')[0].hasAttribute('aria-expanded')) {
+              $('.navbar').removeClass('opaque');
+            }
+          }
+      });
+
+      // Solo quita la barra negra del boton si se ha pulsado
+      // anteriormente alguna vez y esta expandido antes de pulsarlo de nuevo.
+      $('#botonNav').on('click', function () {
+        if ($('#botonNav')[0].hasAttribute('aria-expanded')
+          && ($('#botonNav').attr('aria-expanded') == "true")) {
+              $('.navbar').removeClass('opaque');
+        } else {
+          $('.navbar').addClass('opaque');
+        }
+      });
+
+      // Slide animation
+      $(window).scroll(function() {
+        $(".slideanim").each(function(){
+          var pos = $(this).offset().top;
+
+          var winTop = $(window).scrollTop();
+          if (pos < winTop + 800) {
+            $(this).addClass("slide");
+          }
+        });
+      });
+
+      // Mueve el molinillo cada vez que se le haga click a un enlace
+      // de la barra de navegacion
+      $('.navbar a').on('click', function () {
+        $('#molino').addClass('spin');
+        setTimeout(function () {
+          $('#molino').removeClass('spin');
+        }, 900);
+      });
+
+
+      // scroll page to current location 1 px down, then 1 pixel up,
+      // to update the animations triggered by scrolling
+      $(window).scrollTop($(window).scrollTop()+1);
+      $(window).scrollTop($(window).scrollTop()-1);
+
+    }); //end of document.ready
+
+  </script>
+
+</body>
+
+</html>

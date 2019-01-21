@@ -308,12 +308,10 @@ ul {
 }
 
 #listaDatos {
-    /* font-size: 1.3vmax; */
 }
 
 @media screen and (max-width: 800px) {
     #listaDatos {
-        /* font-size: 3vmax; */
     }
 }
 
@@ -375,18 +373,15 @@ ul {
 .thumbnail {
     position: relative;
     overflow: hidden;
-    /* font-size: 1.3vmax; */
     margin-left: 1vh;
     margin-right: 1vh;
 }
 
 @media screen and (max-width: 800px) {
     .thumbnail h3 {
-        /* font-size: 3vmax; */
         margin-bottom: -1vmax;
     }
     .thumbnail {
-        /* font-size: 2.5vmax; */
     }
 }
 
@@ -442,12 +437,10 @@ ul {
 /*-----------------------------------------------------------------------------*/
 
 #sobremiInfo {
-    /* font-size: 1.3vmax; */
 }
 
 @media screen and (max-width: 800px) {
     #sobremiInfo {
-        /* font-size: 3vmax; */
     }
 }
 
@@ -456,14 +449,12 @@ ul {
 }
 
 #divOllasYtexto {
-    /* font-size: 1.2vmax; */
     padding: 8vh;
     padding-bottom: 2vmax;
 }
 
 @media screen and (max-width: 800px) {
     #divOllasYtexto {
-        /* font-size: 2.5vmax; */
         padding-bottom: 3vh;
     }
 }
@@ -496,10 +487,6 @@ ul {
 #divContacto {
     /*background-color: #f6f6f6;*/
     padding-bottom: 8vh;
-    /*font-size: 2.3vh;*/
-    /*font-size: 1.5vw;*/
-    /* font-size: 1.5vmax; */
-    /* font-size: 18px; */
 }
 
 #contactos {

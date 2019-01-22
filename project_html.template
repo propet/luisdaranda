@@ -117,32 +117,22 @@ $toc$
 </div>
 $endif$
 
-<div class="container-fluid" id="contenido">
-  <div class="row">
-    <!-- columna lateral -->
-    <div class="col-sm-4 side">
-    </div>
-    <!-- columna central con contenido -->
-    <div class="col-sm-4">
 
+<div id="grid">
+  <div class="leftside"></div>
+  <div class="content">
 <!-- --------------------------------------------------------------------- -->
 <!-- Contenido -->
 <!-- --------------------------------------------------------------------- -->
 
-
-
 $body$
-
 
 <!-- --------------------------------------------------------------------- -->
 <!-- end of contenido -->
 <!-- --------------------------------------------------------------------- -->
-
-  </div> <!-- end of content -->
-  <div class="col-sm-4"></div> <!-- right margin -->
-  </div> <!-- end of row -->
-</div> <!-- end of container -->
-
+  </div>
+  <div class="rightside"></div>
+</div>
 
 
   <!-- --------------------------------------------------------------------- -->

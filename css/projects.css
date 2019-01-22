@@ -149,6 +149,33 @@ body {
   }
 }
 
+#grid {
+  display: grid;
+  width: 100vw;
+  grid-template: auto / repeat(3, 1fr);
+  /* grid-gap: 30px; */
+  grid-template-areas: "left text right";
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+}
+
+.sidebarleft {
+  grid-area: left;
+}
+
+.sidebarright {
+  grid-area: right;
+}
+
+.content {
+  grid-area: text;
+}
+
+.content img {
+  width: 100%;
+  height: auto;
+}
+
 
 .thumbnail {
   border-width: 0;

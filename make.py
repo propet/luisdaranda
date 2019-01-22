@@ -50,7 +50,7 @@ project_div_template = r"""
 
 projects_html = ""
 for project in os.listdir("./projects"):
-    projects_html = projects_html + "<br/>" + \
+    projects_html = projects_html + \
             project_div_template.format(project_name=project,
                                         title=projects_dict[project]["title"],
                                         date=projects_dict[project]["date"])

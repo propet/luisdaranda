@@ -121,6 +121,11 @@ body {
   height: 50vh;
 }
 
+#fechaProyecto {
+  padding-top: 2vw;
+  font-size: 2vh;
+}
+
 #presentacion {
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -136,6 +141,7 @@ body {
 
 
 #contenido {
+  padding-top: 5vh;
   padding-bottom: 10vh;
 }
 @media screen and (max-width: 800px) {

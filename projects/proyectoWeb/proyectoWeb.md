@@ -1,114 +1,119 @@
-% Este portfolio
+% This very same portfolio
 %
 % 2019-01-22
 
-[_Echa un vistazo al repositorio._](https://github.com/propet/luisdaranda)
+[_Take a look at the repo_](https://github.com/propet/luisdaranda)
 
 
+**Motivation**
+--------------
 
-En cuarto cursé una asignatura de web dinámicas. De las
-mejores que he tenido durante toda la carrera, a pesar de
-no estar directamente relacionada con mi titulación (era
-    una asignatura de competencias, opcional). La daba Raquel Martínez.
-Muy buena profesora, que se le notaba que le gustaba el tema, y
-enseñaba a toda pastilla bases de datos con MySQL, php, html, css, y
-finalmente javascript.
+I need to proof the things I say I'm capable of. 
 
-Cada semana teníamos un trabajillo que entregar, y al final del
-curso presentábamos una pequeña
-web en equipos de tres.
+Traditionally that means showing some title expended by a trusted institution (e.g. a college degree). But nowadays most conventional teaching centers have become costly and obsolete. And that I believe will never change, universities are beyond repair. Because new technologies, not so new, present themselves as a much better alternative to the oldschool kind of lecture done until this point in time. Would you rather keep taking notes on paper or write them down in an easy to store, searchable, and convenient text file? Would you rather ask for whatever it was just said, or simply go down the video timeline to the point you missed something? I've never met anyone that actually prefers attending at a crowded class. Sure, getting to know the facts from an expert in the field in a face-to-face fashion is such an invaluable experience, but that usually never happens, but takes place it's more like a face-to-mob _conversation_. Even if you could afford a teacher for every 3 or 4 pupils, does it even makes sense to be constantly on top of the students? Let them learn on their own, since that is gonna be their most valuable asset for the rest of their lives, and then come with the doubts. You don't even require an expert present at anytime, a community of learners habitually does the trick just as well. Look at [stackoverflow](https://stackoverflow.com/) where you'll find answers for whatever software related thing that troubles you. Schools and high-schools also suffer from the same issue, but I think they serve the purpose of a kindergarden for more grown up kids, and won't be that easy to replace them until the fabric of society is significantly modified (i.e. never).
 
-Nuestra idea era hacer una página para organizar eventos, donde
-la gente pudiera crear planes, apuntarse a los ya existentes,
-hacer eventos privados para conocidos, etc. Un poco como
-[eventbrite](https://www.eventbrite.es/), aunque yo al menos no sabía 
-de su existencia hasta después de empezar
-con el trabajo.
+So in the last years we've seen a lot of new course platforms coming up on the internet. Just to name a few: EDX, Coursera, Udacity, or Udemy. They host a bunch of courses, or related series of them in the form of _specializations_ or _mini-masters_, and whoever wants to do them, digest their content, pass some tests or do some exercises, and then obtains the blessing from the platform for a price. Very much the same as in the previous system, but supposedly cheaper, you can study in your own time, and the content is frequently of a higher quality than you would get in a classroom, always available 24/7. This makes much more sense to me. I don't want to fund research at the expense of my education, neither do the researcher wants to give the same lecture year after year like a broken record.
 
-Al final quedó bastante chula, pero ninguno teníamos
-intención de hacer una página web de verdad. Así que después de
-presentar, la página quedó perdida por algún sitio (supongo que en una
-   carpeta de dropbox). Tampoco sabíamos realmente cómo montar una página
-de verdad, porque nunca vimos cómo iba el tema de dominios, hosting, etc.
-Solo
-se nos daba acceso a un servidor de la escuela con IP estática, y con
-eso trabajábamos.
+At the end of the day, the reason you should be studying something at all, is because of the things that will allow you to *do*. What better way to proof some knowledge than the things you've already did using those insights you claim to have. Would you rather hire the guy with a piece of paper that says he's good enough to build a car, or the guy who has built his own last year?. Okay, building a car from scratch might be stretching the idea too far, but you get my point, we should be aiming towards the end results. And any institution or company in the middle gets in the way of that goal.
+
+That's why I believe a proper portfolio should be the backbone of any resume. This is why I'm doing mine, on my own personal website, and now I'll tell you how I did it.
 
 
-## **Índice**
-* [¿Por qué un portfolio?](#¿Por qué un portfolio?)
-* [Herramientas](#herramientas)
-* [Dominio y hosting](#dominio y hosting)
+**A static website**
+--------------------
+
+I don't really need much, just to serve some html files and a couple of css files for styling. I don't mess with any database like a dynamic website would do, I don't need to.
+
+Writing everything in html would do. However I quickly got fed up with all the hassle and ceremony required to write something as simple as a plain line break _<br/>_. It just doesn't roll off the tongue. I would also like to separate the content from the html file it is embedded into. Finally, I figured I would like to:
+* Write the content in markdown.
+* Convert that to html.
+* Update my index (home) page with the new content so it's addressable.
+
+The conversion step is done using pandoc, a command line utility written in haskell capable of much more than that. And the _updatting_ proccess is taken care of by a simple script in python which barely reaches 50 LOC's. It calls the pandoc command to convert every markdown file it finds under the _projects_ directory and specifies a common html template for all projects
+
+```python
+####################################
+# Compile every project .md to .html
+####################################
+for project in os.listdir("./projects"):
+    os.system("pandoc --template=project_html.template"
+              " --from markdown --to html --mathjax"
+              " --highlight-style breezedark -o {path}.html"
+              " {path}.md".format(path="./projects/"+project+"/"+project))
+```
+
+then it scrapes the produced html files for the title and date with BeautifulSoup
+
+```python
+############################
+# Scrape every project .html
+############################
+projects_dict = {}  # store data of interest
+for project in os.listdir("./projects"):
+    file = open("{path}.html".format(path="./projects/" + project +
+                                     "/" + project), "r")
+    soup = BeautifulSoup(file, "html.parser")
+    title = soup.find(id="tituloProyecto").b.get_text()
+    date = soup.find(id="fechaProyecto").get_text()
+    projects_dict[project] = {"title": title, "date": date}
+    file.close()
+
+```
 
 
-## **¿Por qué un portfolio?**
+and finally writes the contents for the index html which will display a grid with all the available projects
 
-En el momento de hacer el curriculum, ya que había dado algo de
-tecnologías web, pues quería meterlo también como una habilidad más que tenía.
-Por si podía interesarle a algún contratante. Pero entonces pensé que iba a quedar
-un poco sospechoso decir que sabía hacer webs, sin presentar ninguna.
-En general, siempre quedaría un poco sospechoso afirmar que era capaz de
-hacer algo sin nunca enseñar nada para respaldarlo.
+```python
+##############################################
+# Write the html for the projects grid section
+##############################################
+project_div_template = r"""
+  <div>
+    <a href="./projects/{project_name}/{project_name}.html">
+      <div class="thumbnail">
+        <div class="caption">
+            <h3><b>{title}</b></h3>
+            <br>
+            <p>{date}</p>
+        </div>
+        <img class="img-responsive"
+             src="./projects/{project_name}/thumbnail.jpg"
+             alt="imagen web"/>
+      </div>
+    </a>
+  </div>
+"""
 
-Adicionalmente, es una forma de obligarte a ti mismo a documentar mejor
-tus futuros trabajos, y luego tenerlos ahí de referencia.
+projects_html = ""
+for project in os.listdir("./projects"):
+    projects_html = projects_html + \
+            project_div_template.format(project_name=project,
+                                        title=projects_dict[project]["title"],
+                                        date=projects_dict[project]["date"])
 
-Por último, ya que no di en su día cómo era eso de comprar dominios,
-alojar en un servidor externo, vincular tu dominio con la ip del servidor...
-pues ya aprovecho y aprendo un poco. También por curiosidad.
+#####################
+# Update project grid
+#####################
+index_template = open("index_template.html", 'r')
+index_template_data = index_template.read()
+index_template.close()
 
-## **Herramientas**
+index_prueba_newdata = index_template_data.replace("__PROJECT_DIVS__",
+                                                   projects_html)
+index = open("index.html", 'w')
+index.write(index_prueba_newdata)
+index.close()
+```
 
-Utilicé las tecnologías más básicas: html, css,
-y javascript. Sin plantillas, sin temas. La mayor ayuda que he usado ha
-sido [bootstrap](http://getbootstrap.com/), una
-libreria de clases css para darle estructura al contenido
-html (en filas y columnas), y que este sea <em>responsive</em>. Es decir,
-que se adapte a cualquier tipo o tamaño de pantalla (puedes comprobarlo
-reduciendo el tamaño de la ventana, o visitando la página desde un móvil).
-
-Con javascript fundamentalmente he usado Jquery (una librería de uso
-bastante extendido) para facilitarme la selección de los elementos de
-la página (referidos como partes del DOM: Document Object Model). Y
-luego también empleé la libería [mathjax](https://www.mathjax.org/)
-para incorporar alguna ecuación escrita en LaTeX.
-
-Seguramente el proceso habría sido más fluido usando alguna herramienta
-de creación más gráfica, como podría ser wordpress, divi, o wix.
-Pero también creo que me ha valido la pena usar solo html, css y javascript,
-para revisar las bases que cómo se compone una página, y así no terminar
-siendo esclavo de una sola utilidad.
-
-De todas formas, no descarto empezar a usar wordpress en el futuro más inmediato
-para tener mejor organizado el contenido que vaya metiendo, y sobre todo
-independizarlo del estilo. A la fecha de escribir estas líneas, estoy
-escribiendo sobre html, y no estoy convencido de que sea la mejor idea.
-
-## **Dominio y hosting**
-
-Debido a que ya había utilizado antes la nube de amazon, lo primero
-en lo que pensé fue en una instancia
-(tipo de servidor) de pocos recursos para alojar el portfolio.
-Que sería el equivalente a un ordenador de poca potencia, por tanto,
-también más barato. Así que
-alquilé un servidor tipo <em>t2.nano</em>, el tipo de instancia más
-pequeña.
-
-![Consola de administración en la nube de amazon (servicio EC2)](./images/instanciaAmazon.jpg)
+So whenever I feel like writing about something I recently did, I just need to write a markdown file, add a nice thumbnail picture, and run _make.py_ to do its wonders. Employing a framework for just these two operations feels like an overkill. I can't promise I won't change my mind in the near future, but I'm very happy with the way things are working right now.
 
 
-Y como amazon también hace de <em>registrar</em> (vendedor de dominios),
-pues también compré ahí el nombre del dominio por un año.
+**Domain and hosting**
+----------------------
 
-Finalmente, para vincular el dominio a la IP del servidor, resultó
-fácil poner los registros en los servidores DNS de amazon, tal como
-indicaban las instrucciones.
+In addittion, one of the biggest selling points about a static website is that I get free hosting on [github pages](https://pages.github.com) or [gitlab pages](https://about.gitlab.com/product/pages/), even with a custom domain. At the time of this writing I'm using [luisdomingoaranda.com](luisdomingoaranda.com).
 
-Conforme explore algo más, a lo mejor cambio el hosting hacia alguna
-alternativa más barata (la instancia nano de amazon son unos 6 euros
-al mes). Aunque también tendría que tener en cuenta qué funcionalidad
-se ofrece, porque me parece que la mayoria de hosters no te dan acceso
-a un servidor
-completo (como si fuera un ordenador), sino más bien te dan acceso
-a una carpeta, y de ahí no puedes salir. Tampoco
-puedes instalar nuevo software.
+
+And since I was already familiarized with AWS, I got my domain name from them for 10 bucks a years, along with a small montly fee for the routing service.
+
+![Administration console](./images/instanciaAmazon.jpg)

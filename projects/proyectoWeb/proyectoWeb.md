@@ -24,7 +24,12 @@ That's why I believe a proper portfolio should be the backbone of any resume. Th
 
 I don't really need that much, just to serve some html files and a couple of css files for styling. I don't mess around with any database like a dynamic website would do, I don't need to.
 
-Writing everything in html would do just fine. However I quickly got fed up with all the hassle and ceremony required to write something as simple as a plain line break _<br/>_. It just doesn't roll off the tongue. I would also like to separate the content from the html file it is embedded into. Finally, I figured I would like to:
+Writing everything in html would do just fine. However I quickly got fed up with all the hassle and ceremony required to write something as simple as a plain line break:
+```html
+<br/>
+```
+It just doesn't roll off the tongue. I would also like to separate the content from the html file it is embedded into. Finally, I figured I would like to:
+
 * Write the content in markdown.
 * Convert that to html.
 * Update my index (home) page with the new content so it's addressable.

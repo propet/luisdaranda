@@ -133,7 +133,14 @@ code > span. { color: #cfcfc2; } /* Normal */
 <p>That's why I believe a proper portfolio should be the backbone of any resume. This is why I'm doing mine, on my personal website, and now I'll tell you how I did it.</p>
 <h2 id="a-static-website"><strong>A static website</strong></h2>
 <p>I don't really need that much, just to serve some html files and a couple of css files for styling. I don't mess around with any database like a dynamic website would do, I don't need to.</p>
-<p>Writing everything in html would do just fine. However I quickly got fed up with all the hassle and ceremony required to write something as simple as a plain line break <em><br/></em>. It just doesn't roll off the tongue. I would also like to separate the content from the html file it is embedded into. Finally, I figured I would like to: * Write the content in markdown. * Convert that to html. * Update my index (home) page with the new content so it's addressable.</p>
+<p>Writing everything in html would do just fine. However I quickly got fed up with all the hassle and ceremony required to write something as simple as a plain line break:</p>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;br/&gt;</span></code></pre></div>
+<p>It just doesn't roll off the tongue. I would also like to separate the content from the html file it is embedded into. Finally, I figured I would like to:</p>
+<ul>
+<li>Write the content in markdown.</li>
+<li>Convert that to html.</li>
+<li>Update my index (home) page with the new content so it's addressable.</li>
+</ul>
 <p>The conversion step is done using <a href="http://pandoc.org/">pandoc</a>, a quite powerful command line utility written in haskell. And the <em>updatting</em> proccess is taken care of by a simple script in python which barely reaches 50 LOC's. It calls the pandoc command to convert every markdown file it finds under the <em>projects</em> directory and specifies a common html template for all projects</p>
 <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="co">####################################</span>
 <span class="co"># Compile every project .md to .html</span>
